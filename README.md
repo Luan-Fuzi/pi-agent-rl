@@ -1,6 +1,6 @@
 # Pi Agent RL：购物 Agent 后训练实验
 
-基于 Qwen3.5-2B，在 ShopSimulator 中文购物环境中研究多轮工具调用的 SFT、在线 GRPO、思考蒸馏与过程奖励整形。本仓库整理个人实验代码、评测结果和失败分析，当前作为私有备份使用。
+基于 Qwen3.5-2B，在 ShopSimulator 中文购物环境中研究多轮工具调用的 SFT、在线 GRPO、思考蒸馏与过程奖励整形。本仓库整理个人实验代码、评测结果和失败分析，代码与实验资料现已公开，原始大体积产物继续保留本地备份。
 
 本项目基于 [Piucente/pi-slime-shopsimulator](https://github.com/Piucente/pi-slime-shopsimulator) 的训练参考实现开展实验。上游提供 Pi、slime 与 ShopSimulator 的基础集成及教师采集、SFT、GRPO 和评测流程；本人在此基础上加入思考蒸馏、奖励整形、过程统计和相关评测分析。感谢原作者提供基础实现。上游原 README 保存在 [UPSTREAM_README.md](UPSTREAM_README.md)，具体修改边界见 [来源与恢复记录](docs/provenance.md)。
 

@@ -25,7 +25,7 @@
   },
   "README.md": {
     "kind": "file",
-    "sha256": "055b227d22b7f93a0e9e584c443de262ef5feaf6e36b3715f3e8d99220bafbef"
+    "sha256": "8501f81c02a6f688b75baa0f889f81b31530a0fe45cb4fd738ba2a9491097ec6"
   },
   "THIRD_PARTY.md": {
     "kind": "file",
@@ -133,7 +133,7 @@
   },
   "docs/provenance.md": {
     "kind": "file",
-    "sha256": "f9347a9f2a974fb0b1352266a31ad85773919073f0832a35aa8e25a597c329a8"
+    "sha256": "a51ace1bada7c3626e5ae24c7e8f37ee2f3eee81ef97ec5baa61e736037c6c6e"
   },
   "docs/recomputed-k3.json": {
     "kind": "file",

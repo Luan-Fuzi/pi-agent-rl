@@ -16,7 +16,7 @@
 
 ## 仓库与备份
 
-账号下已有公开上游 fork `Luan-Fuzi/pi-slime-shopsimulator`。本次另建 `Luan-Fuzi/pi-agent-rl` 作为独立私有仓库，避免将个人整理内容推入公开 fork；Git 历史仍保留上游基线。
+账号下已有公开上游 fork `Luan-Fuzi/pi-slime-shopsimulator`。本次先另建 `Luan-Fuzi/pi-agent-rl` 作为独立私有仓库，再于 2026-10-11 按用户要求改为公开；Git 历史仍保留上游基线，原公开 fork 未改动。
 
 原始产物包 `handoff_artifacts_20260906.tar.gz` 继续保留本地，SHA-256：
 `e8bb8a4693543b2720ddee9f068e370fd210f9d633ff7c6e922ec9de660ece17`。
