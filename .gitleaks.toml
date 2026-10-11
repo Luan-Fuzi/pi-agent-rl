@@ -1,0 +1,16 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Reward variant selector, not a credential"
+condition = "AND"
+paths = ['''^commit-shaping/(t1_report\.md|t2_report\.md|run_e0_smoke\.sh)$''']
+regexTarget = "line"
+regexes = ['''SHOP_REWARD_SHAPING=['\x60]?milestones\+antiloop\+efficiency''']
+
+[[allowlists]]
+description = "Upstream tokenizer assertion, not an API key"
+condition = "AND"
+paths = ['''^slime/tests/utils/test_loss_mask_type_qwen35\.py$''']
+regexTarget = "line"
+regexes = ['''assert qwen3_token_ids != qwen35_token_ids''']

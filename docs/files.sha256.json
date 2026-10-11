@@ -1,0 +1,3078 @@
+{
+  ".gitignore": {
+    "kind": "file",
+    "sha256": "22e84ace718121e2205b0f6c4788a1ac75f353d6c1c255cc88997a560e4151da"
+  },
+  ".gitleaks.toml": {
+    "kind": "file",
+    "sha256": "baf98eca8d65e746599f131871f2348a7408d8281a3a975fc01975c2c79cc74c"
+  },
+  ".gitleaksignore": {
+    "kind": "file",
+    "sha256": "ef1dadb51be3bca2e32498c1c246d0d1cc785b1b9d200549d1dda8ed42522a3a"
+  },
+  "CHANGES.md": {
+    "kind": "file",
+    "sha256": "f1aac3cb1eadfaa74d797e2f4e5583010c1ddfb88a69761842b63e2a2d79d644"
+  },
+  "HANDOFF.md": {
+    "kind": "file",
+    "sha256": "d887693e4e51e5a4fa646766049e227c4dce89c7e476b42453ecea8125e2c0a2"
+  },
+  "LICENSE": {
+    "kind": "file",
+    "sha256": "f231915f4d57118118d8a68f25838f16cfb29528d46554b8fd413aa4b879538c"
+  },
+  "README.md": {
+    "kind": "file",
+    "sha256": "055b227d22b7f93a0e9e584c443de262ef5feaf6e36b3715f3e8d99220bafbef"
+  },
+  "THIRD_PARTY.md": {
+    "kind": "file",
+    "sha256": "0aa2de9bcf8853d89357e41578da0d35bfc68a7a87d403e524a9e260f1b8db96"
+  },
+  "UPSTREAM_README.md": {
+    "kind": "file",
+    "sha256": "661ec033f66f6121518a936abc5164f438f0bff441b25cfc8f9e38ac034e7bd4"
+  },
+  "asin_audit_report.md": {
+    "kind": "file",
+    "sha256": "b73de627fe93250c9b23adcdfd934e5f779b96ac2d1565ee036318d2e8431cd0"
+  },
+  "commit-shaping/commit_shaping_plan.md": {
+    "kind": "file",
+    "sha256": "cab22158e8af548a4a22e2a43f800f1352376c4fc4e1888146ab467c99c7350d"
+  },
+  "commit-shaping/eval_e1_dev.sh": {
+    "kind": "file",
+    "sha256": "bdb872f7e55e0e27964f1046f2b4dd9b472b7c53e59860d1c7637362d7b5f85e"
+  },
+  "commit-shaping/eval_e1b_dev.sh": {
+    "kind": "file",
+    "sha256": "12568930d0fa3c27037ea4d89b58814aafe197e5926b6cc7bee7158ec106dd5d"
+  },
+  "commit-shaping/eval_e2_dev.sh": {
+    "kind": "file",
+    "sha256": "11be6e7b486a52f8f1780e36898c708189724ec8d69ce15146bf22d954785189"
+  },
+  "commit-shaping/eval_e3_dev.sh": {
+    "kind": "file",
+    "sha256": "81e91a4cea883c34f58423bfaf85dd1203df0841a510dd774449df70156c7ff5"
+  },
+  "commit-shaping/eval_e3_official.sh": {
+    "kind": "file",
+    "sha256": "8c3f90ac7e5a1cc6f5089f86a032e31585e8c2d79833f5583b73b8a1dcb185be"
+  },
+  "commit-shaping/eval_e3_official_k3.sh": {
+    "kind": "file",
+    "sha256": "003c2ef779d4c2b0a5ef1d6bed13c1259c6d612a6835c307d6fa6da9c2e9d386"
+  },
+  "commit-shaping/eval_t4_official_k3.sh": {
+    "kind": "file",
+    "sha256": "c8e41b893d84946472b67789ff7de3aa1f0784a0d407731105e6ea2a103bfe66"
+  },
+  "commit-shaping/export_episodes.py": {
+    "kind": "file",
+    "sha256": "32c53f172f344d776c6add3f261aef14e4bb06cc395e3320d1e5461f2528b5ca"
+  },
+  "commit-shaping/k3_compare.py": {
+    "kind": "file",
+    "sha256": "0ec9fa97714fc026d3629e7420a0e527614155919f64a5f809cb6158ce8233ca"
+  },
+  "commit-shaping/replay_t4_dump.py": {
+    "kind": "file",
+    "sha256": "63f525d458606a7db11e92cc8c485e6313b42d36f68cc09fa5b3439871bfcc7c"
+  },
+  "commit-shaping/replay_t4_result.json": {
+    "kind": "file",
+    "sha256": "b3a8123dd9309045afbae6e1df26448b4c851379ad1584f975da12b2434acf98"
+  },
+  "commit-shaping/run_e0_smoke.sh": {
+    "kind": "file",
+    "sha256": "4e610d48d3c7ba654e81ee4ddde7f3d3b25bd9c7ab611f84b3c29eb099352c06"
+  },
+  "commit-shaping/run_e1.sh": {
+    "kind": "file",
+    "sha256": "e023c7edde50b73da4e56dc01d9e0bc9c6449210564dd1bbb3060c6802936f2c"
+  },
+  "commit-shaping/run_e1b.sh": {
+    "kind": "file",
+    "sha256": "e9e38a8f44b5c23b8c26290e139106f021d92452b2e4830ec6be01af47afdd5d"
+  },
+  "commit-shaping/run_e2.sh": {
+    "kind": "file",
+    "sha256": "2e80353f5f25a943b6dc949134793e065b14b79a23f9cbd1eed3465a11bbc01d"
+  },
+  "commit-shaping/run_e3.sh": {
+    "kind": "file",
+    "sha256": "0ebfd5562e41f0cb89350c93c8f575c363e6a255bd59a27676e1095615a8cfe4"
+  },
+  "commit-shaping/t1_report.md": {
+    "kind": "file",
+    "sha256": "d304961aa302d057c2bd04ffa3bae1b4970d4485ed620f0120420fba87f2eb5e"
+  },
+  "commit-shaping/t2_report.md": {
+    "kind": "file",
+    "sha256": "2efa44b84e1b198574ac5c7c0b490dd2ba56d1a43ac5d20c12387a017ff372ed"
+  },
+  "commit-shaping/t3_report.md": {
+    "kind": "file",
+    "sha256": "d5b585b8a9f7439077ee53ffbd75d973e934f54cbb04185ecce4f4db4574ff1b"
+  },
+  "commit-shaping/t4_report.md": {
+    "kind": "file",
+    "sha256": "ecde2e2315f28c5c8e8fafb19fc71bd2aea21751a00078c9636b11e647553027"
+  },
+  "commit-shaping/t5_report.md": {
+    "kind": "file",
+    "sha256": "3165309907a4210b24ea5bfb9e6bf4a53e7806f16b1ac3dfe2d1c848bfd31eef"
+  },
+  "commit-shaping/test_reward_shaping.py": {
+    "kind": "file",
+    "sha256": "5ecceed9781512ac0eaa7009fcffa5a38a85c5758d62e60a67a8a562c983f76d"
+  },
+  "docs/provenance.md": {
+    "kind": "file",
+    "sha256": "f9347a9f2a974fb0b1352266a31ad85773919073f0832a35aa8e25a597c329a8"
+  },
+  "docs/recomputed-k3.json": {
+    "kind": "file",
+    "sha256": "ef2e5a257a9a3357cb541e4dba87b391d89154ca005f425fdb87bab2cc4c8937"
+  },
+  "docs/reproduction.md": {
+    "kind": "file",
+    "sha256": "82ed2efe4c709486e53c5bd2c65ea81d90c40a4b187575a67d5573783a7dc67a"
+  },
+  "docs/validation-20261011.md": {
+    "kind": "file",
+    "sha256": "9310b0ef2a58d6ee629aba3eb2db85df14f146f1a09e7acdd06d5ca8acfeceb0"
+  },
+  "examples/episodes.jsonl": {
+    "kind": "file",
+    "sha256": "50ca0636bcd717fc6da68f1ed72b19481f8c19dcd831b403fa07a0166b812053"
+  },
+  "repro.lock.json": {
+    "kind": "file",
+    "sha256": "b687c8d6dc3accedc43d7ef0cd3a2012ae2b5a2ca6acd0e9d2079439dcc3c32b"
+  },
+  "reward_shaping_plan.md": {
+    "kind": "file",
+    "sha256": "8cb12bfd77cfe72764dd1f1ce0156e8bce1e891d2e8d74654b9b6abf8de160de"
+  },
+  "runs/asin_audit/wrong_high_cards.md": {
+    "kind": "file",
+    "sha256": "bf424c3b6dbadc377c5cd8a1307a6468388dc263e415fce75dcf7b5fef9f2e15"
+  },
+  "runs/commit_shaping/report.md": {
+    "kind": "file",
+    "sha256": "7f67c22fefbf0a32350630f91b7f60a1dffbbbe1fe66b21419b93d2759b9fb85"
+  },
+  "runs/eval_report.md": {
+    "kind": "file",
+    "sha256": "7974a0b20810bd90540d73d59e09b2ec3f74949c8693c88c8bd52dfc933e0806"
+  },
+  "runs/qwen35_2b_shop_eval_base/eval_command.txt": {
+    "kind": "file",
+    "sha256": "ef7cd88b0c3e2d7234421e37736d3018e80ec13232ac134e8fdc79a3fae0b4e8"
+  },
+  "runs/qwen35_2b_shop_eval_base/eval_results.json": {
+    "kind": "file",
+    "sha256": "6ce57b34edcbf9024255570dfb3d6667f7ec2ed0a60f23c1863f18ee02a45c82"
+  },
+  "runs/qwen35_2b_shop_eval_base_thinking_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "c9d00c8334f1e05f4f1dcdd76f0aa53df698f9aded89c1846cc163917d68e940"
+  },
+  "runs/qwen35_2b_shop_eval_base_thinking_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "bf819c35effdd2757706daade7b0aa6eb9388479cbbfbaf142cca03d8f6e876b"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e1_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "20083e7c7d22614b663a2274d7d7301d66b83d5e46040ab1e92bd77458e7481a"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e1_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "9704f3fd042d97113c516cc8525333213e67930ef356689bfca94ea12f9a4684"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e1b_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "76728d993a961651a65760cb1a2b26319dd5e500b662194647f737a55f304205"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e1b_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "aadf1cebb5b1258852791711de4ca44a7986394842bb8833d6ed911fd93ef6ec"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e2_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "ec4ad7a0f1f46ac6270135657bdf688701d8565d89375983b6cfba06efcc0956"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e2_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "84b73fd61e92d265827c01c71fb5b067b934a580c9ef2dda6737634a07df6711"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "349561c41ef1503428272432b9cc9e6b75c95f8205b703b186c514e038974bea"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "5ab30dbb71918953493a072d282f10981ffaeb9bf60e22d15682fb89ab1b7c49"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "e11a1306a0bf219777ebe4da668843076d695b53d66338445f7bcd64c69c93c5"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "bc8fdabca0718ee56554cac7e3b017a61a351d282d8133f3672692efa8007d17"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_official_k3/eval_command.txt": {
+    "kind": "file",
+    "sha256": "d6f2874f04b851572ba0a9d71fca2e1b45b41e9ff7adf564413d418af01e4891"
+  },
+  "runs/qwen35_2b_shop_eval_commit_e3_official_k3/eval_results.json": {
+    "kind": "file",
+    "sha256": "1795e365afca57a418c6e3f1b60644a819493643725c8f4731dc98e9085b81d5"
+  },
+  "runs/qwen35_2b_shop_eval_r2_p0probe/eval_command.txt": {
+    "kind": "file",
+    "sha256": "f8de5798392477537e8cbbfa39b95b30968098a5bb0bdc12d4738fc42902fff2"
+  },
+  "runs/qwen35_2b_shop_eval_r2_p0probe/eval_results.json": {
+    "kind": "file",
+    "sha256": "a80e099118002b2ea23349fcb4ef2cfdcc19a071a79a4a322795afe24aefb277"
+  },
+  "runs/qwen35_2b_shop_eval_rl/eval_command.txt": {
+    "kind": "file",
+    "sha256": "747df7539c045b78f95fd2c42067e445705f63865299087df2fa9b9cf49d6738"
+  },
+  "runs/qwen35_2b_shop_eval_rl/eval_results.json": {
+    "kind": "file",
+    "sha256": "ef31b972ff732cef8202ccca56f7beb9d1f5110ba0e4f53297b71fe0f1c01707"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r0_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "ccb720c5c79808ba6b786ec7fea7f1620964e194dc49cf217e36490236d1079c"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r0_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "2a2e7652e3f7eb0c7bb448dfa14c99afb6be75f0e28958db3eae05a09c2d5f8d"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r1/eval_command.txt": {
+    "kind": "file",
+    "sha256": "ab29a83a06f77c8fe69ea3010f47a5b46c65251fe67fe90cb7b1322dce67449c"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r1/eval_results.json": {
+    "kind": "file",
+    "sha256": "681a3b43d5b491e48072154e0253eff71016e67166ad9e67e6cbbe9b57fd9239"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r1_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "1312e2111ddd28532401e24ff537901a8f2e9d33d9c0a28874fdfc3e6ccef881"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r1_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "c7f4766651c3a5f377bad5dab8c787581d1101949d152adf205a54e9af55164a"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r2/eval_command.txt": {
+    "kind": "file",
+    "sha256": "57ec1434f8eee4a2dc9f204ab24013273c90781474f682711d23cda55b484dfd"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r2/eval_results.json": {
+    "kind": "file",
+    "sha256": "b07724e5d7d3ac75f6742735ac94e1533b72775a5dacb7d5f001ebf90330be83"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r2_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "60bd6f9df7aa5d860b26340b57ef3534567a5e271796228c2d663fcdbe7adb44"
+  },
+  "runs/qwen35_2b_shop_eval_rl_r2_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "62e324d3de25bd73f07834cf51dcee2d21237f02a6fd753a2a30e10d007158e7"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking/eval_command.txt": {
+    "kind": "file",
+    "sha256": "067125a59e252722d61611414bb0fb3557942092a8c79a4b30593546a1679ddf"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking/eval_results.json": {
+    "kind": "file",
+    "sha256": "8faccc2cffe5a55f6984bc8398d3b1a0664f309f2c9e677b4268b0c121448f33"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "58abaccc93f979e807bc44238e23b2be8c2f185921226c33e8611811588253d5"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "f7cb25037c1983be5ca8e64cb57698eac8368d762e4bb471ddf177c8253777c3"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking_official_k3/eval_command.txt": {
+    "kind": "file",
+    "sha256": "8e1c00e763ff4b794fca62862ccbedce32d514b3a8efd738708a689e833f635c"
+  },
+  "runs/qwen35_2b_shop_eval_rl_thinking_official_k3/eval_results.json": {
+    "kind": "file",
+    "sha256": "c2f6a0912d0c33cfa3cd3ea5a982884336ce311073180c4bd37761bd8a7cd79c"
+  },
+  "runs/qwen35_2b_shop_eval_sft/eval_command.txt": {
+    "kind": "file",
+    "sha256": "2009a2a05c8edb0d75b68f3926ed4e2ec53995c7eff0a176cbe77b5f92f7c828"
+  },
+  "runs/qwen35_2b_shop_eval_sft/eval_results.json": {
+    "kind": "file",
+    "sha256": "7542b8c88f77c6f42bd66d6a1f7beb64918e0ad221b5df4681d7acefdeaaabfb"
+  },
+  "runs/qwen35_2b_shop_eval_sft_thinking_dev/eval_command.txt": {
+    "kind": "file",
+    "sha256": "9dc50a70574c3b1f72761e659518c8dc8877bcd965d08ca8ddf7117da2472c75"
+  },
+  "runs/qwen35_2b_shop_eval_sft_thinking_dev/eval_results.json": {
+    "kind": "file",
+    "sha256": "71828280d562ebaeffbee31a69a11082d9cb7a183dec55cf84fa54690757a9d2"
+  },
+  "runs/qwen35_2b_shop_eval_sft_thinking_official/eval_command.txt": {
+    "kind": "file",
+    "sha256": "d627928dc543c361d6090b19f176593b5e12e980761b52551329e9b9c4fb3046"
+  },
+  "runs/qwen35_2b_shop_eval_sft_thinking_official/eval_results.json": {
+    "kind": "file",
+    "sha256": "f4c2c14c0e0ac50c7e45db13b1fe6091192c510e0d2d8f9a28e81884979f89e6"
+  },
+  "runs/qwen35_2b_shop_rl/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl/train_command.txt": {
+    "kind": "file",
+    "sha256": "ab3a24475b62e4c00808aaec587638df3690da13f1db96753ff81338cea12276"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1/train_command.txt": {
+    "kind": "file",
+    "sha256": "934c5d5ab052466b056a1f6b4f417296fd3d76518bddb0bdbde174e705456a47"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1b/hf/rollout_24/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1b/hf/rollout_49/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1b/hf/rollout_74/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1b/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e1b/train_command.txt": {
+    "kind": "file",
+    "sha256": "5426e39fbe04233b2f868d5fdeecf7b6105e581501b6a670106e8f0278dae915"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e2/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e2/train_command.txt": {
+    "kind": "file",
+    "sha256": "2ea0459f572b007d002c8925eda8b4bf97fe73c823d8a371b7e7cc1d336d8c5f"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e3/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_commit_e3/train_command.txt": {
+    "kind": "file",
+    "sha256": "d6299a8baa26b10703588b562ae24c12c4dd195d6a2076aad80e2f7e8aa36ccf"
+  },
+  "runs/qwen35_2b_shop_rl_r1/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_r1/train_command.txt": {
+    "kind": "file",
+    "sha256": "2573282324432d4d5871df38c5b457f05791cf05cc278fc52b74a0fc1499bff0"
+  },
+  "runs/qwen35_2b_shop_rl_r2/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_r2/train_command.txt": {
+    "kind": "file",
+    "sha256": "7fc05b404814b94dfa7749404fc013cb377f2d09cfd4ff898196026a91bc578c"
+  },
+  "runs/qwen35_2b_shop_rl_thinking/hf/rollout_99/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_rl_thinking/train_command.txt": {
+    "kind": "file",
+    "sha256": "3ffef57bbadceb87ba4b5741043f5caca048373ee9b33182512ef1109aed2e1f"
+  },
+  "runs/qwen35_2b_shop_sft/hf/rollout_0/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_sft/train_command.txt": {
+    "kind": "file",
+    "sha256": "37a99bce0c3612a1455397a9a8676b8c74cc50ccd7ec28d9d25cf7af1883ea9f"
+  },
+  "runs/qwen35_2b_shop_sft_thinking/hf/rollout_0/README.md": {
+    "kind": "file",
+    "sha256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275"
+  },
+  "runs/qwen35_2b_shop_sft_thinking/train_command.txt": {
+    "kind": "file",
+    "sha256": "1188a635ffcf60ad0b75562084e67d86d6642fb2d021120a37941c913bae3c85"
+  },
+  "runs/reward_shaping/badcase_analysis.md": {
+    "kind": "file",
+    "sha256": "57dafb0fa1455109d7de3c5f38a865daae84709dcb63797b5ce481910ef40871"
+  },
+  "runs/reward_shaping/budget_review.md": {
+    "kind": "file",
+    "sha256": "64f84c8730e2ed55ece1e3e2c7f60ebba453ee7b987e5acf29304708a8a743d9"
+  },
+  "runs/reward_shaping/phase0_report.md": {
+    "kind": "file",
+    "sha256": "b35dae2a2e05a0c4a0c6e0bd7c0a130e685f1b79b4047d9186a94a71a4edc6f8"
+  },
+  "runs/reward_shaping/phase1_report.md": {
+    "kind": "file",
+    "sha256": "035aa6044167d10d2f0a89b1c8ff60d7dc55cb68c215d2a0446cb51a8b1e0ada"
+  },
+  "runs/reward_shaping/phase2_report.md": {
+    "kind": "file",
+    "sha256": "ecf402741b9b40cdf9c567150cefcb9fdad9bc5f910ae4b163cf3ed37ecb38c7"
+  },
+  "runs/reward_shaping/phase3_report.md": {
+    "kind": "file",
+    "sha256": "00784053049a645c14b746bea4de6a686f91399a727094a09b99c7d4f61287e5"
+  },
+  "runs/reward_shaping/phase4_report.md": {
+    "kind": "file",
+    "sha256": "d31576bda6e8a3ce0ce99156b605921b3834017e51b6a6623ca7c5dccaf1fc3e"
+  },
+  "runs/reward_shaping/r0_dev_acceptance.md": {
+    "kind": "file",
+    "sha256": "1595a25e21369e9e47ca206ba72e4944a9dfc6e1729a55fe7b28b71595d5a69a"
+  },
+  "runs/reward_shaping/r1_dev_acceptance.md": {
+    "kind": "file",
+    "sha256": "c381ffea0e08cb01f9f933ee5ede612706412e02e504ea0f990d1888b9489852"
+  },
+  "runs/reward_shaping/report.md": {
+    "kind": "file",
+    "sha256": "396367a28bdc8e5af4c1b38f6ab8472b5f52744a60bb77b0087a53d0b01b8428"
+  },
+  "runs/thinking_sft/report.md": {
+    "kind": "file",
+    "sha256": "6ad7aa3bb0eb7cec24670220ec1eb27c3bcfbbfc150d87ea3395cff5933c0eb0"
+  },
+  "shopsimulator_patch/shopsimulator-slime-integration.patch": {
+    "kind": "file",
+    "sha256": "c75973456391f8f7784e0823bde2eae5cd6f4ae519dae51d43ed5c8b86c19dac"
+  },
+  "slime/.agents/skills": {
+    "kind": "symlink",
+    "sha256": "722a918d6dee037f575ef1bf214371f14f77047e71bd75cff39f182b2ba9f6b0"
+  },
+  "slime/.claude/skills/add-dynamic-filter/SKILL.md": {
+    "kind": "file",
+    "sha256": "1769f999716a51d0d0cff35a88e84cafdbceebb86084412157c9562b27c1c91f"
+  },
+  "slime/.claude/skills/add-eval-dataset-config/SKILL.md": {
+    "kind": "file",
+    "sha256": "6caf92a368177ba414841d447e338302412983ee4f57f3e738166e0608f2db68"
+  },
+  "slime/.claude/skills/add-reward-function/SKILL.md": {
+    "kind": "file",
+    "sha256": "cbea3590956164833cc3533a689095b735996a44aae9acbf8f4f6800714fc487"
+  },
+  "slime/.claude/skills/add-rollout-function/SKILL.md": {
+    "kind": "file",
+    "sha256": "0e818a484964a2e92a5fcd65961c30b03710ed717acc7094b82ba47fe4104d32"
+  },
+  "slime/.claude/skills/add-tests-and-ci/SKILL.md": {
+    "kind": "file",
+    "sha256": "b1a2c6126391e9061bdcdf50bc15e63e89af44dcf58011e0b6895720ec026ae5"
+  },
+  "slime/.claude/skills/slime-code-review-preferences/SKILL.md": {
+    "kind": "file",
+    "sha256": "d5dd17034cd6bcdd3ce4b749303b41a3e0c68c8e88755b53dfe6c1623a7afb9e"
+  },
+  "slime/.github/ISSUE_TEMPLATE/bug_report.yml": {
+    "kind": "file",
+    "sha256": "d87ed1449020135e07160a44e3ccbcc64aa07b9033d55c2864dc24b718e3fd57"
+  },
+  "slime/.github/ISSUE_TEMPLATE/config.yml": {
+    "kind": "file",
+    "sha256": "90c27324f71e3e04b1a851841529fe8dee437978eef4357fc0cfe55613f3b749"
+  },
+  "slime/.github/ISSUE_TEMPLATE/question.yml": {
+    "kind": "file",
+    "sha256": "e504c96049f7430129d66e30782324acbf9009533c43fa37a186607ae8972b90"
+  },
+  "slime/.github/workflows/bot-slash-lint.yaml": {
+    "kind": "file",
+    "sha256": "39c52a5edcce50f5fc6a0eee40aa8fb5613e537d4cf205cd21fdc868990ee621"
+  },
+  "slime/.github/workflows/conda-ci.yml": {
+    "kind": "file",
+    "sha256": "45c9f8baea4e2e85fa755598036e8e91c6757f4e673d82a314dd5d76e9469e9b"
+  },
+  "slime/.github/workflows/generate_github_workflows.py": {
+    "kind": "file",
+    "sha256": "1e810036d3a20c2cbcd1eea39ad4b5b92a08381ef11ec1abc3c73a825cfe1eda"
+  },
+  "slime/.github/workflows/pr-test.yml": {
+    "kind": "file",
+    "sha256": "b2efa413c578e300e5f179ce6a23155e973c062421f22b9dc1fc622a558aa6ea"
+  },
+  "slime/.github/workflows/pr-test.yml.j2": {
+    "kind": "file",
+    "sha256": "1619d4a22b58f5629bf6e40cb0b116fce62dd14d276ff2a058f9b30cf3c7c1e4"
+  },
+  "slime/.github/workflows/pre-commit.yml": {
+    "kind": "file",
+    "sha256": "846cd301cf495f1b3e57f8f6c2883eef040d5c37fccff23348f7e840a86e277a"
+  },
+  "slime/.github/workflows/release-docs.yaml": {
+    "kind": "file",
+    "sha256": "d9c53361cc1c6e10102492718b2a13e7465680bc9d9f4469e2c554126413e0a8"
+  },
+  "slime/.gitignore": {
+    "kind": "file",
+    "sha256": "5a94c3fb145e9833908a2ddd02248e6f3e3ae27bed59f3a90d02bd088f47cfb7"
+  },
+  "slime/.pre-commit-config.yaml": {
+    "kind": "file",
+    "sha256": "de96fc4a0b714246b5f473d761737e23509d491624d794e62c1092f50586935f"
+  },
+  "slime/CONTRIBUTING.md": {
+    "kind": "file",
+    "sha256": "3b36593b957681917d3c17b0470764984a246bd3a0f9900070def5b7abe296a0"
+  },
+  "slime/LICENSE": {
+    "kind": "file",
+    "sha256": "bf917707c1e0ffdfe653d63aebc188a48f738f3faad9acc188c346d3618694af"
+  },
+  "slime/README.md": {
+    "kind": "file",
+    "sha256": "8989972638bb73f06ecd4bfb3092ce49ca42f55ff14f660cdaf28a3d37c93d21"
+  },
+  "slime/README_zh.md": {
+    "kind": "file",
+    "sha256": "c1ee1f86af75115bb4513745a080fe6f9d11841f4a3e7c07c4cd87121abedcb3"
+  },
+  "slime/build_conda.sh": {
+    "kind": "file",
+    "sha256": "36c78575aee7d504620ebb34ea7663b7b0c85f94deb54e57daf3d7d499a6a130"
+  },
+  "slime/docker/Dockerfile": {
+    "kind": "file",
+    "sha256": "b4cb7a1122d0558847f028b467a871d04942f0ca0166b60a70bc71d8174f086b"
+  },
+  "slime/docker/Dockerfile.gb10": {
+    "kind": "file",
+    "sha256": "4b5990b7ef275deeeac7ceef848679d0a9a04155573a240a106323bbb37d0c80"
+  },
+  "slime/docker/Dockerfile.rocm": {
+    "kind": "file",
+    "sha256": "007b6ba30656cd2829f3f3d0be8836dad04703c43b3c194a42bc50820a15c0ad"
+  },
+  "slime/docker/Dockerfile.rocm_MI350-5": {
+    "kind": "file",
+    "sha256": "67543ac7630f5ca1bbff03a1da54d121f307821a75889882792d6d8ae6fec54c"
+  },
+  "slime/docker/Dockerfile_20250810_9a48ba0.rocm": {
+    "kind": "file",
+    "sha256": "cf9b6c8bae8a7050ccf4ff7d19a320f338383cba45ac912b525a789dc97d6bae"
+  },
+  "slime/docker/Dockerfile_20250810_c22f55b.rocm": {
+    "kind": "file",
+    "sha256": "eaba8381e50c19b99807021e57bc9c3197207957c8e7e5141d20a8a7693bbd23"
+  },
+  "slime/docker/NOTES_GB10.md": {
+    "kind": "file",
+    "sha256": "066918ecc3bb57c651b6fa7a7b676de7034dc97164bf6ef93d7edf4f5e8186e5"
+  },
+  "slime/docker/README.md": {
+    "kind": "file",
+    "sha256": "9c5404eeb90908ec4a71395a9d285eaf205ddc61e847296f4c2dd52af62c1846"
+  },
+  "slime/docker/amd_patch/latest/amd_megatron_fused_kernels_init.patch": {
+    "kind": "file",
+    "sha256": "acdfec3fe3c16d111cbf5170bf340404334bf03470fd3e84c89088bf883a5319"
+  },
+  "slime/docker/amd_patch/latest/megatron.patch": {
+    "kind": "file",
+    "sha256": "23a6268f8274000dcce6096840ee80a96995e4a2284fda0a823a606b8143aa1d"
+  },
+  "slime/docker/amd_patch/latest/sglang.patch": {
+    "kind": "file",
+    "sha256": "ae4dee5b36bcf22fe8da238c648da3d66752133bde873d463a96668983125b2e"
+  },
+  "slime/docker/amd_patch/sglv0.5.0rc0/amd_megatron_fused_kernels_init.patch": {
+    "kind": "file",
+    "sha256": "acdfec3fe3c16d111cbf5170bf340404334bf03470fd3e84c89088bf883a5319"
+  },
+  "slime/docker/amd_patch/sglv0.5.0rc0/megatron.patch": {
+    "kind": "file",
+    "sha256": "23a6268f8274000dcce6096840ee80a96995e4a2284fda0a823a606b8143aa1d"
+  },
+  "slime/docker/amd_patch/sglv0.5.0rc0/sglang.patch": {
+    "kind": "file",
+    "sha256": "ae4dee5b36bcf22fe8da238c648da3d66752133bde873d463a96668983125b2e"
+  },
+  "slime/docker/justfile": {
+    "kind": "file",
+    "sha256": "36582d72a1327cd469ed17dd55937a91ce14108940a19e9c8761224fb934b33c"
+  },
+  "slime/docker/npu_patch/README.md": {
+    "kind": "file",
+    "sha256": "e29dfc2e22841045b3e169c9ae9a1c1dc88afe33f539d1385db21f5e25a5e440"
+  },
+  "slime/docker/npu_patch/megatron-bridge.patch": {
+    "kind": "file",
+    "sha256": "329e5af35a8388c5058a6e9c6217d36c16b6bad250d03e8c1243ef315e597da2"
+  },
+  "slime/docker/npu_patch/megatron.patch": {
+    "kind": "file",
+    "sha256": "6ec81a4870818cfda1440a345db787e811dd373ea1e9b23358e90e849fa18512"
+  },
+  "slime/docker/npu_patch/mindspeed.patch": {
+    "kind": "file",
+    "sha256": "6386099383ca5767c42cfd6905ae9cee55a88cd312a6bd31a160070be8e6a7cb"
+  },
+  "slime/docker/npu_patch/sglang.patch": {
+    "kind": "file",
+    "sha256": "b02825790b9dd08e685825f7f282c9423f9a70ba9a2d68bb8873189a8bcc3900"
+  },
+  "slime/docker/npu_patch/slime.patch": {
+    "kind": "file",
+    "sha256": "54578317c7816eaac33832dabc970e2aa2b6f482ec62194f5e7d7bd120f25dc6"
+  },
+  "slime/docker/patch/gb10/cuda_profiler_api.h": {
+    "kind": "file",
+    "sha256": "a341601a7944e807dfb682efed7beeca5c58759ff605b68936efeaaf4325e275"
+  },
+  "slime/docker/patch/gb10/patch_sgl_kernel.py": {
+    "kind": "file",
+    "sha256": "140d19f85b3452f3b8a2d482868a4fd4a9e18b73f7b3bb6c60737efa8f0a6ba1"
+  },
+  "slime/docker/patch/gb10/sgl-kernel-arch.patch": {
+    "kind": "file",
+    "sha256": "a85a94371a4eed792a020161d42d14febe724cad61d90767bb6fdbe1224425dd"
+  },
+  "slime/docker/patch/latest/megatron-sglang-aligned.patch": {
+    "kind": "file",
+    "sha256": "5ab43b1cceff9abcd4459aadd3ed05bd7abf3869594b44f93afb375bbae40e15"
+  },
+  "slime/docker/patch/latest/megatron.patch": {
+    "kind": "file",
+    "sha256": "976fd8bbe1f4e386be97e35353efdbfb592dacaea9797c5a81ea324d3c2c5b77"
+  },
+  "slime/docker/patch/latest/sglang-deterministic.patch": {
+    "kind": "file",
+    "sha256": "b144a8c4ca2aad4502adcec7c06e4d689f493c9a8391c4b20fdcb7933ab5270e"
+  },
+  "slime/docker/patch/latest/sglang-pull_weights.patch": {
+    "kind": "file",
+    "sha256": "bca438816b4a91778fad2c34b08c9fabd15bc571645c74b457d26cf6f7b2f4c3"
+  },
+  "slime/docker/patch/latest/sglang-release_hicache.patch": {
+    "kind": "file",
+    "sha256": "e70a3dc140806b0a985c4d856e741600ae8cf89ee664e4dac6460318e22b1a7d"
+  },
+  "slime/docker/patch/latest/sglang-top_p.patch": {
+    "kind": "file",
+    "sha256": "fdb070bcf92849167bea1afb821cbc9974d6fcaf6a2c353e47ac68091c5c16b1"
+  },
+  "slime/docker/patch/latest/sglang.patch": {
+    "kind": "file",
+    "sha256": "4c1b47f52f7a4fd025739851ecc38f9b5bd437054aab006365e9c455eb8739bf"
+  },
+  "slime/docker/patch/v0.5.0rc0-cu126/megatron.patch": {
+    "kind": "file",
+    "sha256": "ff93ca0abc01ffb5fed6df826ab8a7c45d7c951b029369b106ebf3040182ce36"
+  },
+  "slime/docker/patch/v0.5.0rc0-cu126/sglang.patch": {
+    "kind": "file",
+    "sha256": "ae4dee5b36bcf22fe8da238c648da3d66752133bde873d463a96668983125b2e"
+  },
+  "slime/docker/patch/v0.5.12.post1/megatron.patch": {
+    "kind": "file",
+    "sha256": "976fd8bbe1f4e386be97e35353efdbfb592dacaea9797c5a81ea324d3c2c5b77"
+  },
+  "slime/docker/patch/v0.5.12.post1/sglang.patch": {
+    "kind": "file",
+    "sha256": "de38af4b91ebc15bb391c7d2a0268140bc4e03c935c4d105a0f97dc1d311bb04"
+  },
+  "slime/docker/patch/v0.5.15.post1/megatron.patch": {
+    "kind": "file",
+    "sha256": "976fd8bbe1f4e386be97e35353efdbfb592dacaea9797c5a81ea324d3c2c5b77"
+  },
+  "slime/docker/patch/v0.5.15.post1/sglang-pull_weights.patch": {
+    "kind": "file",
+    "sha256": "bca438816b4a91778fad2c34b08c9fabd15bc571645c74b457d26cf6f7b2f4c3"
+  },
+  "slime/docker/patch/v0.5.15.post1/sglang-release_hicache.patch": {
+    "kind": "file",
+    "sha256": "e70a3dc140806b0a985c4d856e741600ae8cf89ee664e4dac6460318e22b1a7d"
+  },
+  "slime/docker/patch/v0.5.15.post1/sglang-top_p.patch": {
+    "kind": "file",
+    "sha256": "fdb070bcf92849167bea1afb821cbc9974d6fcaf6a2c353e47ac68091c5c16b1"
+  },
+  "slime/docker/patch/v0.5.15.post1/sglang.patch": {
+    "kind": "file",
+    "sha256": "4c1b47f52f7a4fd025739851ecc38f9b5bd437054aab006365e9c455eb8739bf"
+  },
+  "slime/docker/patch/v0.5.5.post1/megatron.patch": {
+    "kind": "file",
+    "sha256": "50c491de81628cbbc70ceb7f5dddcb6bc3a7fc9499e546f64a6bd64459c1d292"
+  },
+  "slime/docker/patch/v0.5.5.post1/sglang.patch": {
+    "kind": "file",
+    "sha256": "f1d9e38b94133b84e02df424c6ffca98aacb2c4c143a889a90a51eebf71de650"
+  },
+  "slime/docker/patch/v0.5.6/megatron.patch": {
+    "kind": "file",
+    "sha256": "efc30c4f25c8a079356cb3bd78d76a8c73db6e3f856a49b6d25fb5454fc0b4be"
+  },
+  "slime/docker/patch/v0.5.6/sglang.patch": {
+    "kind": "file",
+    "sha256": "c819ca89b527423692a4fe78a8fa30579ddaec624f32e423320c5dd094e6f6f3"
+  },
+  "slime/docker/patch/v0.5.7/megatron.patch": {
+    "kind": "file",
+    "sha256": "58465ac5e4782f28cc41bec1ba76121547b7993a325b21540edc18ea79227878"
+  },
+  "slime/docker/patch/v0.5.7/sglang.patch": {
+    "kind": "file",
+    "sha256": "e8d9b486c41e68a847ff7aa79347919e87a6939babd8e8e810a880470fa7de8a"
+  },
+  "slime/docker/patch/v0.5.9/megatron.patch": {
+    "kind": "file",
+    "sha256": "0f7295e5ea53275a4d0a1be4d4132c89b5707300d81aafc3b587c25bccc41048"
+  },
+  "slime/docker/patch/v0.5.9/sglang.patch": {
+    "kind": "file",
+    "sha256": "217cd85503dd502d68a455f322e1171d13bb6f2ad541d584483f2d80a9e8e718"
+  },
+  "slime/docker/version.txt": {
+    "kind": "file",
+    "sha256": "a0f27fe0df5d093802e359f671a2f5fdb753e310bedc8a3280c7e275fc84ed01"
+  },
+  "slime/docs/README.md": {
+    "kind": "file",
+    "sha256": "8ee6a57e92e59b58d29be1b985a902abd957bfff0489008b97dcdad0d254d3fd"
+  },
+  "slime/docs/_static/css/custom_log.css": {
+    "kind": "file",
+    "sha256": "182782ee708895947368bd4d33b15519bc6726bb2c056251a479287843656367"
+  },
+  "slime/docs/_static/css/readthedocs.css": {
+    "kind": "file",
+    "sha256": "c02f7aa7840ac4dad6c166c204a7f374b1ba6e937af5d43089a5d6ae33a514b1"
+  },
+  "slime/docs/_static/image/arch.png": {
+    "kind": "file",
+    "sha256": "83f7bf608d739a96f053bf4685218772bdc871914f66b19ee11989b0bd6b0e8d"
+  },
+  "slime/docs/_static/image/blogs/release_v0.1.0/cuda_vmm.png": {
+    "kind": "file",
+    "sha256": "d24b1a655b97b6da8975ce135466e741f65c47749fd62767e94db8b9190492fb"
+  },
+  "slime/docs/_static/image/blogs/release_v0.1.0/overrall.png": {
+    "kind": "file",
+    "sha256": "5937debd7c50a47942c162b2e189abc8d88a119641b5e7744a91c246d90cc4c4"
+  },
+  "slime/docs/_static/image/logo.ico": {
+    "kind": "file",
+    "sha256": "67dd7b44d47fdd3a94d25fa9cdca978ef990c0f91948685cda2601e9d8647275"
+  },
+  "slime/docs/_static/image/logo.jpg": {
+    "kind": "file",
+    "sha256": "2fc812f287762a71d7e356ab632c0391ce3349166b0fadf8e5c6b90fb043c559"
+  },
+  "slime/docs/_static/image/sglang_config.png": {
+    "kind": "file",
+    "sha256": "50529d31cef9287f1791a98a45bbfc50d2d26b6fe2d599930cb8a42d786e91a8"
+  },
+  "slime/docs/_static/image/trace.png": {
+    "kind": "file",
+    "sha256": "9d8645553d5c5cbf9f6ce144940354017bf34d3a6346e8d69f0af87fb5743671"
+  },
+  "slime/docs/_static/js/lang-toggle.js": {
+    "kind": "file",
+    "sha256": "f648aa1f5f6fd9c9eae3d68573217b563164cc2165bb63fca75389de49eb4e83"
+  },
+  "slime/docs/build.sh": {
+    "kind": "file",
+    "sha256": "95839f84c03fc37f74c553e76bcc19e0c9eaecd3a74173c8d049108444434ddf"
+  },
+  "slime/docs/build_all.sh": {
+    "kind": "file",
+    "sha256": "11b583e16e0015b1d570339e0a8a663b40d8d835808dfcb6b809ffaed248e785"
+  },
+  "slime/docs/conf.py": {
+    "kind": "file",
+    "sha256": "895c34632f9fd816f576153030226ad2b91195dc95cb10139b411bb47313b3cf"
+  },
+  "slime/docs/en/advanced/arch-support-beyond-megatron.md": {
+    "kind": "file",
+    "sha256": "fb74b6a84d926ea5b8a061855c1a3aecda1a41b4d13ccc791644ef4bf55f05a4"
+  },
+  "slime/docs/en/advanced/delta-weight-sync.md": {
+    "kind": "file",
+    "sha256": "16fcf898730ba77de91a6b7b22026185f5e1cbb91bcbf6b531bf64b7a937edb5"
+  },
+  "slime/docs/en/advanced/external-rollout-engines.md": {
+    "kind": "file",
+    "sha256": "9d67848d311e6c8b24b8db9578b662934ddf73a1d19da26d1d6587bfbcc5c19b"
+  },
+  "slime/docs/en/advanced/fault-tolerance.md": {
+    "kind": "file",
+    "sha256": "3e881a21db7d7798f4d1b2c46cb538c5460fe12e4b30586ff2f306be9082b920"
+  },
+  "slime/docs/en/advanced/low-precision.md": {
+    "kind": "file",
+    "sha256": "e02e991b2a89c7588ef4361cb56ec218c47d5d39b1c673949069a5f6677947a6"
+  },
+  "slime/docs/en/advanced/megatron-config.md": {
+    "kind": "file",
+    "sha256": "780f821c2c3e0e998c9b0e521dc621a11dd1b895b4f03f95bdbe24d0be9c9427"
+  },
+  "slime/docs/en/advanced/observability.md": {
+    "kind": "file",
+    "sha256": "32da138c5ee1e9ef3ef642465a23896d349c885b5bb7cf0bacee8ee12a982f8b"
+  },
+  "slime/docs/en/advanced/on-policy-distillation.md": {
+    "kind": "file",
+    "sha256": "8ac98a4259033289004d17013005df3100270da6788470152dca447720edb4e6"
+  },
+  "slime/docs/en/advanced/pd-disaggregation.md": {
+    "kind": "file",
+    "sha256": "86338a0a35ac1871ad5c96bc4e47f49983b146a4b6b00b19deec7d1e0db88590"
+  },
+  "slime/docs/en/advanced/reproducibility.md": {
+    "kind": "file",
+    "sha256": "fcb973d8a6e725f31113cf971101d42929c801f7be87e326dbab8a0253be8588"
+  },
+  "slime/docs/en/advanced/sglang-config.md": {
+    "kind": "file",
+    "sha256": "f30b036edbc2b4ca1bb1e8e2bebea7f203978d00a41c0814926af436ccd84b44"
+  },
+  "slime/docs/en/advanced/speculative-decoding.md": {
+    "kind": "file",
+    "sha256": "5024a96a16ae128c9b1efe1c9af7245f97a245850cd3fa0d704af299bcc9f02b"
+  },
+  "slime/docs/en/blogs/introducing_slime.md": {
+    "kind": "file",
+    "sha256": "b18637670d937c9f6da44dc68ec51d1f2f109e5f30a1936f2bbcc9cdf4acd195"
+  },
+  "slime/docs/en/blogs/release_v0.1.0.md": {
+    "kind": "file",
+    "sha256": "edb841edd88835836a59691b1b4acf840450792cec93a7905cd844d7908ab421"
+  },
+  "slime/docs/en/developer_guide/ci.md": {
+    "kind": "file",
+    "sha256": "7e26162a1c441b55d148dcd7ba5ef65f1318bb6eabc260fec4953de447050a44"
+  },
+  "slime/docs/en/developer_guide/debug.md": {
+    "kind": "file",
+    "sha256": "e9c7fe03a3a89676bc42ba72a6147ff94e0e406c3d9a926f3d4eb83328524aed"
+  },
+  "slime/docs/en/developer_guide/profiling.md": {
+    "kind": "file",
+    "sha256": "72866bfcf41aef088fe29b25f492530410413545493fb4d5f972f67177388217"
+  },
+  "slime/docs/en/developer_guide/trace.md": {
+    "kind": "file",
+    "sha256": "1030bf2edc7fc996b4b7433bf3d18341e084c442b12e531e9a5720468e687198"
+  },
+  "slime/docs/en/examples/deepseek-r1.md": {
+    "kind": "file",
+    "sha256": "ef752d09bfe3b5b6b7c079a378db6c7141c8df783a15b00f4e88cbd59974f335"
+  },
+  "slime/docs/en/examples/glm4-9B.md": {
+    "kind": "file",
+    "sha256": "4a8b9f2d6b56f89ca6283e793ac96502bdcd9fa4018787d11abe221555b8e575"
+  },
+  "slime/docs/en/examples/glm4.7-30B-A3B.md": {
+    "kind": "file",
+    "sha256": "cb21d764e5bab8fb5532bd04f3d815d900180ef3688ab0f24a0d7ee0935cd32b"
+  },
+  "slime/docs/en/examples/glm4.7-355B-A32B.md": {
+    "kind": "file",
+    "sha256": "e4819eaa6a1dd5254c445cc3d98e1a8b9754388f788ffd7aec95a4b85808c4bb"
+  },
+  "slime/docs/en/examples/glm5.2-744B-A40B.md": {
+    "kind": "file",
+    "sha256": "9aa5ce86b101306d6ef1bb6ccf95f10f998f5d957abfb2387449e606ecab8dff"
+  },
+  "slime/docs/en/examples/qwen3-30B-A3B.md": {
+    "kind": "file",
+    "sha256": "8125492b14c2a07e99cb4ba7f520d7106c7213c0fe2cd2be86f2013a25871cf9"
+  },
+  "slime/docs/en/examples/qwen3-4B.md": {
+    "kind": "file",
+    "sha256": "f1c4d0a7d7fe681b62890f71e2a0bac0ba8fc822dac2c80df471bfe906fc2398"
+  },
+  "slime/docs/en/examples/qwen3-4b-base-openhermes.md": {
+    "kind": "file",
+    "sha256": "aec0eac8d96b08b7d1a9147bebae3f22981702f818e0e056a34778af1281168b"
+  },
+  "slime/docs/en/get_started/agent.md": {
+    "kind": "file",
+    "sha256": "33f669e24bf7f013eb1dd15fdc1e47f37460eba9a129719f81e14d006f4979fc"
+  },
+  "slime/docs/en/get_started/customization.md": {
+    "kind": "file",
+    "sha256": "e002e61209e85e9ab9e3c58040e0fec24d2c93fc2090bc439434330e76dd5345"
+  },
+  "slime/docs/en/get_started/qa.md": {
+    "kind": "file",
+    "sha256": "0abacac472f4bf89f967363fd434d986955c5c89c3462303f40c4664a9f33071"
+  },
+  "slime/docs/en/get_started/quick_start.md": {
+    "kind": "file",
+    "sha256": "f9deae133e4dadfa9797a8e726cbb42df6f3dd3c136c6eef0a4688effd8435d5"
+  },
+  "slime/docs/en/get_started/usage.md": {
+    "kind": "file",
+    "sha256": "af899996c34b2c7e1954f6e62693ac3da6e167c2053ff75a6cc7a422f064d46d"
+  },
+  "slime/docs/en/index.rst": {
+    "kind": "file",
+    "sha256": "3be9e6174f78ba5dfc2e83906441307f56402ad02694ad30c28f7951f1d311d8"
+  },
+  "slime/docs/en/platform_support/amd_tutorial.md": {
+    "kind": "file",
+    "sha256": "72fcf98d8459df571d95578a4f774aa05f7e28634687791bf4eb8e02627d041e"
+  },
+  "slime/docs/requirements.txt": {
+    "kind": "file",
+    "sha256": "fe69bf9433a6e016650497b936f4d1c745faa912633cde479af3121e4db7929d"
+  },
+  "slime/docs/serve.sh": {
+    "kind": "file",
+    "sha256": "5169153c16dc1354f92feb01bcfc86502c16611f1b0e5ac663523a0e09b31ded"
+  },
+  "slime/docs/zh/advanced/arch-support-beyond-megatron.md": {
+    "kind": "file",
+    "sha256": "2e9a9e98db9619024472d1c8c7bbf5202d119677739a6eacf2dd2012d1848a4a"
+  },
+  "slime/docs/zh/advanced/delta-weight-sync.md": {
+    "kind": "file",
+    "sha256": "f379d4c44e3fca4fc9ffffc1511b2de52c7805f899c6dfa10556439427bcd881"
+  },
+  "slime/docs/zh/advanced/external-rollout-engines.md": {
+    "kind": "file",
+    "sha256": "986572ca066f637af91ab7f7147f5f435b2a6e6de14b5dcc5b4937eb86f952fb"
+  },
+  "slime/docs/zh/advanced/fault-tolerance.md": {
+    "kind": "file",
+    "sha256": "e61599eac4496f8ae34f442a4df7c105f479499dd5e32e6915bd57c0a881cf9d"
+  },
+  "slime/docs/zh/advanced/low-precision.md": {
+    "kind": "file",
+    "sha256": "cf5191d84acd2b80372d95bf6ad400140d3f031c54f961347be9dc50327b0d2d"
+  },
+  "slime/docs/zh/advanced/megatron-config.md": {
+    "kind": "file",
+    "sha256": "57b6fa588a37e6526f6b6ca4bfa269b5e46e4d74b7d8b41951338ae7300d9318"
+  },
+  "slime/docs/zh/advanced/observability.md": {
+    "kind": "file",
+    "sha256": "b2a6fb1242de0a39bb220897ca3341ddca5b553f1f1658666ecc4317b4a5f21a"
+  },
+  "slime/docs/zh/advanced/on-policy-distillation.md": {
+    "kind": "file",
+    "sha256": "98b833c9cad3f4c8d96be6365574e710369cd72363811df0ab79b2d960d94642"
+  },
+  "slime/docs/zh/advanced/pd-disaggregation.md": {
+    "kind": "file",
+    "sha256": "a7b8b53bb3bf9e6568c4e3834f733601a672f73e891992a3c58f0cff0375ff32"
+  },
+  "slime/docs/zh/advanced/reproducibility.md": {
+    "kind": "file",
+    "sha256": "32888f7cf55f25c77942fef83cc6e0f023e2ade6249d56b1cef0dfd380b45fad"
+  },
+  "slime/docs/zh/advanced/sglang-config.md": {
+    "kind": "file",
+    "sha256": "3e7c9f00c1eb9c39ab313d3bc654dd8d703e19a9d8494cbca002bb1dccc095fa"
+  },
+  "slime/docs/zh/advanced/speculative-decoding.md": {
+    "kind": "file",
+    "sha256": "8d2383ed5f0510866d8b98b38b1e31d8420f87c4cbbbf0f2a407bf33dd6adf78"
+  },
+  "slime/docs/zh/blogs/introducing_slime.md": {
+    "kind": "file",
+    "sha256": "cdb02b74c79d6a4f61e8c202d6fe01586fdc5dbd8be4f6b3864ea9765d1872a7"
+  },
+  "slime/docs/zh/blogs/release_v0.1.0.md": {
+    "kind": "file",
+    "sha256": "df02512a6c9c0d1d7eda112b69e7643509f390c6c0d59587656757025e2d9d6a"
+  },
+  "slime/docs/zh/developer_guide/ci.md": {
+    "kind": "file",
+    "sha256": "7bea7e2a21ea7cb99dc29e85b5bb6ed4b99c8b8b628056fa7f98bb76b71c0bb4"
+  },
+  "slime/docs/zh/developer_guide/debug.md": {
+    "kind": "file",
+    "sha256": "286445a5196352e42a1ee54adc8e1e09b1550ba32c5139a0ca5c46b9f25d3a9a"
+  },
+  "slime/docs/zh/developer_guide/install_flashqla.md": {
+    "kind": "file",
+    "sha256": "8d39840450c6e8c9606259c3b6fae451e3bb44c747ee300c58dae87144e58f3a"
+  },
+  "slime/docs/zh/developer_guide/profiling.md": {
+    "kind": "file",
+    "sha256": "7f7d01cc1274111e70912d6e23b3aecd5c4ec67cd722c5e9f229cc9b601f9598"
+  },
+  "slime/docs/zh/developer_guide/trace.md": {
+    "kind": "file",
+    "sha256": "c4ca042e818c6bf9fefb35254faa21caab43b32956862d2d9a48b3b2e5d9c7cc"
+  },
+  "slime/docs/zh/examples/deepseek-r1.md": {
+    "kind": "file",
+    "sha256": "b939471778450ce0779427a9a085f4a6e0aa29857f99096b2e53dec3607368a6"
+  },
+  "slime/docs/zh/examples/glm4-9B.md": {
+    "kind": "file",
+    "sha256": "dccd62a271d492baa256a11bab45e6475ba3c34d57e281549342771aaf99cd44"
+  },
+  "slime/docs/zh/examples/glm4.7-30B-A3B.md": {
+    "kind": "file",
+    "sha256": "ae96cde134ff344c5dd325e613feeca3a610ebf1b190a3a7ed755a4f271c3c7e"
+  },
+  "slime/docs/zh/examples/glm4.7-355B-A32B.md": {
+    "kind": "file",
+    "sha256": "0449743db7d383eff032fc124bf0d1ec72fe8117a8681657f20265f15f355ef9"
+  },
+  "slime/docs/zh/examples/glm5.2-744B-A40B.md": {
+    "kind": "file",
+    "sha256": "8a3b3d6e49b59980a3814cf659aa666ac18de0f3b809b6a460780ba37764745c"
+  },
+  "slime/docs/zh/examples/qwen3-30B-A3B.md": {
+    "kind": "file",
+    "sha256": "daba203dd38058b2811ba7b31420ee6f055a7db562cb78763d8abdeb21aa507e"
+  },
+  "slime/docs/zh/examples/qwen3-4B.md": {
+    "kind": "file",
+    "sha256": "b38f879084dab776c6abccef09c8ace59ec4617f728897164406ca8abefc6d4c"
+  },
+  "slime/docs/zh/examples/qwen3-4b-base-openhermes.md": {
+    "kind": "file",
+    "sha256": "ee69b2076669d9ba612243c75e4dd8f409bb246416883177ad3f191d7dad053b"
+  },
+  "slime/docs/zh/examples/qwen3-next-80B-A3B.md": {
+    "kind": "file",
+    "sha256": "10dfd1c0957f5eebab31a8e68d99b8d6580cb0d5f8eb3dc6189278e4942a60ea"
+  },
+  "slime/docs/zh/get_started/agent.md": {
+    "kind": "file",
+    "sha256": "81d2aecaa7930becbf0855ce1a970a81337949f8b760b73073b19a639c615722"
+  },
+  "slime/docs/zh/get_started/customization.md": {
+    "kind": "file",
+    "sha256": "94f563320edaf18578a5442175087509139922220dd56809e243c2f523813f8f"
+  },
+  "slime/docs/zh/get_started/qa.md": {
+    "kind": "file",
+    "sha256": "c3e9f47195a307bb4a5d7ce37adccc1336fd4ca75f9a499291f75ff480c0cf6d"
+  },
+  "slime/docs/zh/get_started/quick_start.md": {
+    "kind": "file",
+    "sha256": "9bea7a6c8bce21265b5340832d1f8c0e8bac82982323c61fd48f5c05ca21df19"
+  },
+  "slime/docs/zh/get_started/usage.md": {
+    "kind": "file",
+    "sha256": "6933b57174497d6a3a49ff9103aa01b6e8a2917aa576bbe959186ca01d64d8cd"
+  },
+  "slime/docs/zh/index.rst": {
+    "kind": "file",
+    "sha256": "54b0e65c95f1ce77343ffd7371ceebc24b769f8e0ab5ada6ab4ea9847a92a5e0"
+  },
+  "slime/examples/README.md": {
+    "kind": "file",
+    "sha256": "70dfd8582628488971f0fe6e2bee1ab62092149d01efd78706e909f8829ea4a1"
+  },
+  "slime/examples/ShopSimulator/__init__.py": {
+    "kind": "file",
+    "sha256": "847a9812cc29695eb9958b8362be339b570b6835a9cc1b0759ab5162fc8127f3"
+  },
+  "slime/examples/ShopSimulator/collect_sft.py": {
+    "kind": "file",
+    "sha256": "3424d7a4ca8360e1eb6be21070048ea596dec3bcad79359c4e17fe806f923598"
+  },
+  "slime/examples/ShopSimulator/common.py": {
+    "kind": "file",
+    "sha256": "d8a35ab87071c10917435d94b8c2dae8e6af7d644b06e291f49deea131f6b68b"
+  },
+  "slime/examples/ShopSimulator/config/shop_eval_dev_k1.yaml": {
+    "kind": "file",
+    "sha256": "a614f22e446d8e2081dca2acc01223622b63bdb59b4c6e36ef715614ea1a8e10"
+  },
+  "slime/examples/ShopSimulator/config/shop_eval_official_k1.yaml": {
+    "kind": "file",
+    "sha256": "2c1c1cf21603f46226b2afed8b8022e69a031db47853864723a11f17e7f1b1bc"
+  },
+  "slime/examples/ShopSimulator/config/shop_eval_official_k3.yaml": {
+    "kind": "file",
+    "sha256": "7816c4537a7197d69cfe446369d4f08ec90ea623371a894f17c229af8250de45"
+  },
+  "slime/examples/ShopSimulator/config/shop_rl.json": {
+    "kind": "file",
+    "sha256": "38ecd95365d994abe9b187230618263d3989c449b20003755991d954ca4e51f8"
+  },
+  "slime/examples/ShopSimulator/config/shop_rl_clean.json": {
+    "kind": "file",
+    "sha256": "6a3321d33a88f2d28286e5ba126a0acf96a0295f2af0be78d286c749776f2200"
+  },
+  "slime/examples/ShopSimulator/config/shop_rl_smoke.json": {
+    "kind": "file",
+    "sha256": "76618d279f59939fb22292d428e977221f1a314603f264685783c8e3abd77b1d"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/dev.jsonl": {
+    "kind": "file",
+    "sha256": "565c733d3207a3fc8746e1e569d4ca1917f09e13d1f0ccd2e3b7c46011574473"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/official_test.jsonl": {
+    "kind": "file",
+    "sha256": "dbf4d04813871d730555946d6069ea52ddcfe35b823313997793e87b5a6f4e14"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/official_test_200.jsonl": {
+    "kind": "file",
+    "sha256": "139e30385e7e0cb2e71cd1a26318110110b2eaa9d56bf0a7ec9b457868313500"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/rl.jsonl": {
+    "kind": "file",
+    "sha256": "94dbdb49079c009b0dff947dabf4cea0a4e5d27b739adabe4d8d44fbe41ec21e"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/rl_500.jsonl": {
+    "kind": "file",
+    "sha256": "cc656ea23193ea6dc067c86b2e907c31a01877ad6a94c72c2b9ccb8deca3f387"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/sft.jsonl": {
+    "kind": "file",
+    "sha256": "9fe2f6670ea0538afe02497bde293205431333913463d16417028a84be112904"
+  },
+  "slime/examples/ShopSimulator/data/tasks_v2/sft_512.jsonl": {
+    "kind": "file",
+    "sha256": "1ba9235729ce223272b7e628dc833307384528398d9c9539649d7db5e765d0c8"
+  },
+  "slime/examples/ShopSimulator/deepseek_api_key.example.txt": {
+    "kind": "file",
+    "sha256": "2c524ee53909716f2fb9b38d85a226977c14ddce4005bde5f58f465cf7f77c99"
+  },
+  "slime/examples/ShopSimulator/generate.py": {
+    "kind": "file",
+    "sha256": "8e719c167586d39501c0bed6e9a5781c89b7fd02cfb19c0a06b9a36c5d9a99a2"
+  },
+  "slime/examples/ShopSimulator/pi_harness.py": {
+    "kind": "file",
+    "sha256": "b3e4d0a0b0f844f1ca67b952a5f62e2176f10a48e015177f21d35712b13317db"
+  },
+  "slime/examples/ShopSimulator/prepare_sft.py": {
+    "kind": "file",
+    "sha256": "df98f5533f14879d2ad7c3b653191766626d507508bffa54fbbc06b18f517f27"
+  },
+  "slime/examples/ShopSimulator/reward_shaping.py": {
+    "kind": "file",
+    "sha256": "52b9fabbb06969da63066c10a4c91c7a01feb3eefb167aed1cd0b9cbe4efdc55"
+  },
+  "slime/examples/ShopSimulator/run_eval.sh": {
+    "kind": "file",
+    "sha256": "284c04f27ba098f38f00d8ce8dbee57a3772cd3d77c3ad9a3cf11a292ab23351"
+  },
+  "slime/examples/ShopSimulator/run_rl.sh": {
+    "kind": "file",
+    "sha256": "4935cbaadb88a2d06b462368928494d8a7739c35d307a91732af6f31964d3def"
+  },
+  "slime/examples/ShopSimulator/run_sft.sh": {
+    "kind": "file",
+    "sha256": "066af2ead382b933d2420c3c528fbc085bf3fce5632864b52b2b420b7b1670fa"
+  },
+  "slime/examples/ShopSimulator/shop_extension.ts": {
+    "kind": "file",
+    "sha256": "aca6ef1c2d5860bb1f53706bc494053914d4327650587fa99b69e0bcaab99a21"
+  },
+  "slime/examples/ShopSimulator/summarize_eval.py": {
+    "kind": "file",
+    "sha256": "319e0ed37c69fc1250f7b30f56e963648c7a2f82ac462ca8c908b9db1a02a6b3"
+  },
+  "slime/examples/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/examples/coding_agent_rl/README.md": {
+    "kind": "file",
+    "sha256": "646fd38afdcda441e853d378651171bb7657de0d1873deda2e152c0d93ef8e9f"
+  },
+  "slime/examples/coding_agent_rl/generate.py": {
+    "kind": "file",
+    "sha256": "493f995c961ae302d81725c134f122a6933a4396236a498d514550dd8d7707b1"
+  },
+  "slime/examples/coding_agent_rl/run_qwen36_35b_a3b_swe_8nodes.sh": {
+    "kind": "file",
+    "sha256": "43b352b9c84d71aaf4c85f3a47aa993cc9232d1de7620e2a14bfd14f038cd5f1"
+  },
+  "slime/examples/coding_agent_rl/swe.py": {
+    "kind": "file",
+    "sha256": "ca8f69d23bb7f3b0fadd8e9bdccb6519ff87367203ae4f39e195696a752cfca7"
+  },
+  "slime/examples/delta_weight_sync/README.md": {
+    "kind": "file",
+    "sha256": "4ba18c62b1c0c01a1946247f47f28020dd45c1a19002556c44ca7b16741ff7ff"
+  },
+  "slime/examples/delta_weight_sync/run-glm4.7-30B-A3B-delta.sh": {
+    "kind": "file",
+    "sha256": "4a4f1cab63fb5ed8420b3c646579bdec6ff7ce5342018d0869c66777c1fc9d56"
+  },
+  "slime/examples/eval_multi_task/README.md": {
+    "kind": "file",
+    "sha256": "8bbcd861bec774824df24967d7026eaa12d4d7be96b28d16fe51beae97dfefc0"
+  },
+  "slime/examples/eval_multi_task/multi_task.sh": {
+    "kind": "file",
+    "sha256": "87a589b4877d44c96b514e19785b568c7d5385c9e819e0799956b6566b7d1bd2"
+  },
+  "slime/examples/eval_multi_task/multi_task.yaml": {
+    "kind": "file",
+    "sha256": "54b1391bacec7dab212cac8e8feb3fc8b9cca7c531f628c967e4e7d49f59b20e"
+  },
+  "slime/examples/eval_multi_task/requirements_ifbench.txt": {
+    "kind": "file",
+    "sha256": "091d55cbf2aedcea999ca2ed8d4405562c5e5d7fa6a36d5d8559b2b15ac223e4"
+  },
+  "slime/examples/fully_async/README.md": {
+    "kind": "file",
+    "sha256": "2653a1619b5186c5899ce1f76a3e4289efeff20f1d81b62ead2ddda27428689b"
+  },
+  "slime/examples/fully_async/run-qwen2.5-0.5B-fully_async.sh": {
+    "kind": "file",
+    "sha256": "e019828b46232172b5e0f5d6ecaf0af3d5339d43b712d259676783946c8ae78a"
+  },
+  "slime/examples/fully_async/run-qwen3.5-9B-fully_async.sh": {
+    "kind": "file",
+    "sha256": "34a9ec1a4a110dbf33b64bae41118dc3141242ca0f12ea23c77bb6e0c0911413"
+  },
+  "slime/examples/geo3k_vlm/README.md": {
+    "kind": "file",
+    "sha256": "9546d594456624097ec8f52a58fe3520aa195d04e38103958143769e1d10dd57"
+  },
+  "slime/examples/geo3k_vlm/fsdp_vs_megatron.png": {
+    "kind": "file",
+    "sha256": "ad3c8f97c77fd7fffc64a147f832f1035e738036e35eaf11a45deac24ca2078b"
+  },
+  "slime/examples/geo3k_vlm/run_geo3k_qwen35.sh": {
+    "kind": "file",
+    "sha256": "78f4cef7ce1386912ae51ff76c95e759e081601a6efc05a81de60c8087c668d8"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/README.md": {
+    "kind": "file",
+    "sha256": "df87bd73e67b427925a0b8b9a90b90f1ac78ea3ef7b70418019d5746340c3763"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/__init__.py": {
+    "kind": "file",
+    "sha256": "f881a73cbc7cdaa918d655102ba2bc9953f3dfcaf28c5eb3d0586c06cc9d6b93"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/base_env.py": {
+    "kind": "file",
+    "sha256": "e8b181793718f08a748c0d3edc0edb3c60480a8be920c6612ea7343174ecbf82"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/env_geo3k.py": {
+    "kind": "file",
+    "sha256": "9b259e6e10f5e4a973b38e275056f73cd2cbb006b6e99a5a12f4b313a8c86066"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/geo3k_vlm_multi_turn_config.yaml": {
+    "kind": "file",
+    "sha256": "1d392a38e236aed3b932a1279a04e3009f0dd8ca2be3d44e2fa26f563379ba39"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/geo3k_vlm_multi_turn_reward.png": {
+    "kind": "file",
+    "sha256": "747b785a466c7b6b2e986e1c86112c8c5f35857453e24e22de4428ec1c147c77"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/rollout.py": {
+    "kind": "file",
+    "sha256": "dfb9728e8e7f117b90b69c9d71a0453e07760262129c7a4b1e20b100cc6b99d1"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/rollout_experiment_result_megatron.png": {
+    "kind": "file",
+    "sha256": "8f9fc9efb3550cd4077c64dbff8fcb682e23e7ee6774d577e4f0fe5d67a8e3bb"
+  },
+  "slime/examples/geo3k_vlm_multi_turn/run_geo3k_vlm_multi_turn.py": {
+    "kind": "file",
+    "sha256": "443ba08ce674d38edffebed720c647fa53596fdf668115e73a41ddae278f4180"
+  },
+  "slime/examples/multi_agent/README.md": {
+    "kind": "file",
+    "sha256": "5c7ea417459c0cf20bd6a6f6696c54b34bc9e2c9237e6299d4d819fde9f3e3c1"
+  },
+  "slime/examples/multi_agent/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/examples/multi_agent/agent_system.py": {
+    "kind": "file",
+    "sha256": "edf7713bdf2e29ac522b46484129bfb48d0a2184b81e2d63acc79a5cf60f8749"
+  },
+  "slime/examples/multi_agent/prompts.py": {
+    "kind": "file",
+    "sha256": "026e24627b071d4bc510f1264d2abddac53ed1f1ccfb5a2e3bfdecc9597fc45e"
+  },
+  "slime/examples/multi_agent/rollout_with_multi_agents.py": {
+    "kind": "file",
+    "sha256": "4221f0a3374123a78d7403cf1ef2fc5e6fec0141d30ce7c931d1067cac35ce90"
+  },
+  "slime/examples/multi_agent/run-qwen3-30B-A3B-multi-agent.sh": {
+    "kind": "file",
+    "sha256": "69c449fbab663cf1de06bfa0d8e94fb79157221cc0e477bd4736f19e4fff6c4e"
+  },
+  "slime/examples/on_policy_distillation/README.md": {
+    "kind": "file",
+    "sha256": "68a2aa953639b00132d2f4d1d3b190f58cba898d65cf58883e64f6a4eb51a45a"
+  },
+  "slime/examples/on_policy_distillation/run-qwen3-8B-opd-megatron.sh": {
+    "kind": "file",
+    "sha256": "01cb8dd3b8d4e1e592b5864bc99020d4c019fdd9e3d4a65b7537c6eea2e969d3"
+  },
+  "slime/examples/on_policy_distillation/run-qwen3-8B-opd.sh": {
+    "kind": "file",
+    "sha256": "a4213fb51cc96b268db48bd897b2c1167edd67730ddfb0908d4f00488382b0ed"
+  },
+  "slime/examples/retool/README.md": {
+    "kind": "file",
+    "sha256": "db2bc72c1d09d5992b5c05c9db2d806dbe8ab0f9ef60116b7d4bc1c205fb0a86"
+  },
+  "slime/examples/retool/generate_with_retool.py": {
+    "kind": "file",
+    "sha256": "8412baeffd19dc83544edc2c831c7425b5009bca43079a3daafc21c3674e78c5"
+  },
+  "slime/examples/retool/requirements.txt": {
+    "kind": "file",
+    "sha256": "33ea086ae84c767d8a89bce61a95bd13f0dc378ebd7499d583c4a255f9f8692d"
+  },
+  "slime/examples/retool/retool_qwen3_4b_rl.sh": {
+    "kind": "file",
+    "sha256": "e62ddd97611cb4a5654d570ffba7b9b2bddbb66068b54d783681e7be6500371a"
+  },
+  "slime/examples/retool/retool_qwen3_4b_sft.sh": {
+    "kind": "file",
+    "sha256": "83bae2495f99b7f6527bca4b6cfc24c01b5562e32b35510f42122a489e500f7f"
+  },
+  "slime/examples/retool/rl_data_preprocess.py": {
+    "kind": "file",
+    "sha256": "ca8e799074b66dee4859d76b002220bff9e5de81dfb07fd7ba2eddbf9f4a56e1"
+  },
+  "slime/examples/retool/sft_data_processing.py": {
+    "kind": "file",
+    "sha256": "f42514b4fe9107e81e4ff51b05f1f0f39cf8b21c5fdad4426b486959c70d61c5"
+  },
+  "slime/examples/retool/tool_sandbox.py": {
+    "kind": "file",
+    "sha256": "c6cdd8ea47f89295c13b3185df4ebc12359e908ca66faf0c7a4121aaab361d5a"
+  },
+  "slime/examples/search-r1/README.md": {
+    "kind": "file",
+    "sha256": "7d613ff72025fd2caad7cd31085ca4e36e1db8e03f2fd2594e703b6f9953b3ec"
+  },
+  "slime/examples/search-r1/README_zh.md": {
+    "kind": "file",
+    "sha256": "8daf6e8525e72717d6b0703692e89dd09537c21fc071f8dd1695004e8762073f"
+  },
+  "slime/examples/search-r1/generate_with_search.py": {
+    "kind": "file",
+    "sha256": "60f8332ca1358c79aad4bf60f541573e34ee7a186394aaae9210d8a7c626c338"
+  },
+  "slime/examples/search-r1/google_search_server.py": {
+    "kind": "file",
+    "sha256": "a1ac36c9765cc8c3be07fe2022d1aee6041902b65c432162ad36f4ee9ca69fa9"
+  },
+  "slime/examples/search-r1/local_dense_retriever/download.py": {
+    "kind": "file",
+    "sha256": "fef22aa552f8bd50d5cea5cc1f69d8d44fb1dca5c9cda2df737088c52a104ca6"
+  },
+  "slime/examples/search-r1/local_dense_retriever/retrieval_server.py": {
+    "kind": "file",
+    "sha256": "61fbd4cc4de5a5cbd5faa833437ae63bd40e41ca23b7cbe798421ab42ea19f27"
+  },
+  "slime/examples/search-r1/local_search_server.py": {
+    "kind": "file",
+    "sha256": "58de2c752a0d63aa4eddff099116b77803946e7e1212815e0eaa61db747427b1"
+  },
+  "slime/examples/search-r1/qa_em_format.py": {
+    "kind": "file",
+    "sha256": "aa0133c8bd6e1b9acf84e6e10a83f7dc9230d693ee495a21005e2eb314a5a261"
+  },
+  "slime/examples/search-r1/run_qwen2.5_3B.sh": {
+    "kind": "file",
+    "sha256": "882f92ebb5aad1c726afe8971f474304ec69aacde505febe333da80fa450cb60"
+  },
+  "slime/examples/strands_sglang/README.md": {
+    "kind": "file",
+    "sha256": "56cdd7f59ceae9e8023eea628cee548ae3b9b1c5dd73d91e1959a25609bf894a"
+  },
+  "slime/examples/strands_sglang/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/examples/strands_sglang/generate_with_strands.py": {
+    "kind": "file",
+    "sha256": "70070e89a5aed0d4fcae72ab98afc2e5079a5bcaa6838b7d21757ed675e389e2"
+  },
+  "slime/examples/strands_sglang/strands_qwen3_8b.sh": {
+    "kind": "file",
+    "sha256": "5a42d005fb3fe3f910b4f324543ab187642272f38b09167a5dc09c1d48d70c29"
+  },
+  "slime/examples/strands_sglang/subprocess_interpreter.py": {
+    "kind": "file",
+    "sha256": "d252740a7953b30096c8152367c510a0f55817c0916b3a458a998ac5e358f050"
+  },
+  "slime/examples/tau-bench/README.md": {
+    "kind": "file",
+    "sha256": "e9bb3e3e63f7952d0e7578c9e218caef60645dd12035b2da47adb6319e276e6c"
+  },
+  "slime/examples/tau-bench/generate_with_tau.py": {
+    "kind": "file",
+    "sha256": "384b24436b2f27b973f3202e01dfbeea756aa9a53d974e010be5aa5a8d4f50ef"
+  },
+  "slime/examples/tau-bench/openai_tool_adapter.py": {
+    "kind": "file",
+    "sha256": "8804c69ce88cb46be4388a0c1e7c3aef118a60ae424ee56b61cbb48f39ef7288"
+  },
+  "slime/examples/tau-bench/run_qwen3_4B.sh": {
+    "kind": "file",
+    "sha256": "31f8a509bf0b6c9f86061f4f6a20f99f5eaecb5a094ad724917c4186a7c8086e"
+  },
+  "slime/examples/tau-bench/sglang_tool_parser.py": {
+    "kind": "file",
+    "sha256": "7b4ea496acce96173800147769c9c208ea92074bf4e1a0c91e01d1f540444822"
+  },
+  "slime/examples/tau-bench/tau1_mock.py": {
+    "kind": "file",
+    "sha256": "132eedc49d72a3f774784a001ec588f3c104e37139a90559d7b94a48b68d62c2"
+  },
+  "slime/examples/tau-bench/token_delta.py": {
+    "kind": "file",
+    "sha256": "c43064f8c5414dfc66ff60cc137d3d9e930d2466ea62a4c31234f53ea4769fb2"
+  },
+  "slime/examples/tau-bench/trainable_agents.py": {
+    "kind": "file",
+    "sha256": "e32fef6e2c11e1ed19cbda881eaac0b6e16a8503ee6c0a29ce3730c8e1970499"
+  },
+  "slime/examples/train_infer_mismatch_helper/README.md": {
+    "kind": "file",
+    "sha256": "1bc4655f1a1194ac20d561d12ad5f641ea98063e3b307b2d3062504ea5062676"
+  },
+  "slime/examples/train_infer_mismatch_helper/mis.py": {
+    "kind": "file",
+    "sha256": "0a19ea77258a6ad1f7798a4feaaddca8ca51f0144879bb62fef7d608305a6c37"
+  },
+  "slime/examples/train_infer_mismatch_helper/mis.yaml": {
+    "kind": "file",
+    "sha256": "5deab630372f237027c9b53c6315763fb613c83fd48f8cfc10e4cf2d63ec4dba"
+  },
+  "slime/examples/train_infer_mismatch_helper/run-qwen3-4b-mis.sh": {
+    "kind": "file",
+    "sha256": "45ff32039ee794b0c3b6f0c9b36499be6be47d497f7dec29a8616d8ca5522931"
+  },
+  "slime/imgs/arch.png": {
+    "kind": "file",
+    "sha256": "83f7bf608d739a96f053bf4685218772bdc871914f66b19ee11989b0bd6b0e8d"
+  },
+  "slime/pyproject.toml": {
+    "kind": "file",
+    "sha256": "6fa0b1ae7db9a5196c9bcf575d52b4a8d57da68f1200b2aba34933f1969d0b50"
+  },
+  "slime/requirements.txt": {
+    "kind": "file",
+    "sha256": "770f3d8c8d2aa405342cdebeb3285fe9cde494e7f729e642886e849c9d2b844f"
+  },
+  "slime/scripts/low_precision/run-kimi-k2-Thinking-int4.sh": {
+    "kind": "file",
+    "sha256": "fc7ac36f2e9178969cb45fc70ceb08a708e091bc533f267fc34649b012be6644"
+  },
+  "slime/scripts/low_precision/run-moonlight-16B-A3B-int4.sh": {
+    "kind": "file",
+    "sha256": "907a741d79cfeb3a2218c283c8ccd95f6aec999d918487163d4e16aa51fb5e2e"
+  },
+  "slime/scripts/low_precision/run-qwen3-235B-A22B-int4.sh": {
+    "kind": "file",
+    "sha256": "0850709b65ad3ce3dba90725890493a6468265819ed6e81f3a6a6533303bebb9"
+  },
+  "slime/scripts/low_precision/run-qwen3-30B-A3B-int4.sh": {
+    "kind": "file",
+    "sha256": "da1b7ed7353caf8267aa1d1f365c1f2ff1441a9fb87aaea0d19c0b3328572326"
+  },
+  "slime/scripts/low_precision/run-qwen3-30b-a3b-fp8.sh": {
+    "kind": "file",
+    "sha256": "16f88f5ae6e23f2143b846c685c7238904515a80f0e813e1ad7e892f48a90121"
+  },
+  "slime/scripts/low_precision/run-qwen3-4b-fp8.sh": {
+    "kind": "file",
+    "sha256": "0355dc6c024f87d10d429948facf848ae454b3de84fad5065946ba18c9bc614d"
+  },
+  "slime/scripts/models/deepseek-v3-20layer.sh": {
+    "kind": "file",
+    "sha256": "ac3dd8f12b6fbdaf0af8345f2160c1e40ecc22eb23024d9eaaef5826728bfe65"
+  },
+  "slime/scripts/models/deepseek-v3-5layer.sh": {
+    "kind": "file",
+    "sha256": "a3a890aad9cee43ab4d4239d1ae43dcabdd1f6c66483f76f8873f2def58c9816"
+  },
+  "slime/scripts/models/deepseek-v3.sh": {
+    "kind": "file",
+    "sha256": "b3124639bae89693be2824ade01ad9e6297ee9b13a3fa3de70b15914dafb8da5"
+  },
+  "slime/scripts/models/glm4-32B.sh": {
+    "kind": "file",
+    "sha256": "472cc03c0dea20ea16c7e813ff9afacc089d1f0d4cb90e86879c410e92faf309"
+  },
+  "slime/scripts/models/glm4-9B.sh": {
+    "kind": "file",
+    "sha256": "0a6ccfd4e2ab1581ecf9e1b76954d24e19b9569cc7cde29231610da08e727ab9"
+  },
+  "slime/scripts/models/glm4.5-106B-A12B.sh": {
+    "kind": "file",
+    "sha256": "e578f56d462d34b4fd58471e405be9b0e7a8f7ee0ee33588ca291e0708785b6f"
+  },
+  "slime/scripts/models/glm4.5-355B-A32B.sh": {
+    "kind": "file",
+    "sha256": "a9b48dac074ce6547328291b8a233d708f9f58684bf2563f4c3c045a58960da0"
+  },
+  "slime/scripts/models/glm4.7-30B-A3B.sh": {
+    "kind": "file",
+    "sha256": "f28ff3ef9bbfa6f1d0392ab03d57a9b1ccac7edfb21f1709a3380b189add700f"
+  },
+  "slime/scripts/models/glm5-744B-A40B.sh": {
+    "kind": "file",
+    "sha256": "e6b9686608f19c113bc07821ad78e51569e85caf40e4f478f8781b41626d8ac8"
+  },
+  "slime/scripts/models/glm5.2-744B-A40B.sh": {
+    "kind": "file",
+    "sha256": "20989589aaf7695cc41e4b2cadee43657797b75534773dccaa3de1e55fb1fe81"
+  },
+  "slime/scripts/models/kimi-k2-thinking.sh": {
+    "kind": "file",
+    "sha256": "9013e6e19e24fc7bc0d13a2aa676b0a48407c6bc43f884d4ad1e6d114b3649b9"
+  },
+  "slime/scripts/models/kimi-k2.sh": {
+    "kind": "file",
+    "sha256": "0b2789dcb0fa97aab18573b57b5f4e3833952428dda865adaf076ee3fdeb2598"
+  },
+  "slime/scripts/models/llama3.1-8B-Instruct.sh": {
+    "kind": "file",
+    "sha256": "aa5ee8271c9663f8dc47b6c1c12e9353a9cb01ea94ff62d4c7a01460a95482b9"
+  },
+  "slime/scripts/models/llama3.2-3B-Instruct-amd.sh": {
+    "kind": "file",
+    "sha256": "104583b16db289827863979d57f1ecae42900fa0ce6a7128a45dca2daccc169d"
+  },
+  "slime/scripts/models/llama3.2-3B-Instruct.sh": {
+    "kind": "file",
+    "sha256": "c656ec46b9073ebcd4287f470f827029b08003c8ef76c450ebef1dae0138a282"
+  },
+  "slime/scripts/models/mimo-7B-rl.sh": {
+    "kind": "file",
+    "sha256": "28656dd25c1fb39aacd1cf6c7fb9ed2addaa4343319763a9b89839db62225dc1"
+  },
+  "slime/scripts/models/minimax-m2.sh": {
+    "kind": "file",
+    "sha256": "1dfb6928d67ae83c7b3f21d6b3c55821e4d049ab698f949fc38cba7339d527a6"
+  },
+  "slime/scripts/models/moonlight.sh": {
+    "kind": "file",
+    "sha256": "6eb70bba0413abed7f88e3f1e1992bda9d23355e688c39ca271317eb8cce16d0"
+  },
+  "slime/scripts/models/qwen2.5-0.5B.sh": {
+    "kind": "file",
+    "sha256": "dd72ea4651de928dfc47ca5316e190ad49bd81ba9b66f4874d7cc80e5271ec70"
+  },
+  "slime/scripts/models/qwen2.5-1.5B.sh": {
+    "kind": "file",
+    "sha256": "a35adb4ede93ef43d0efbb1cb3f66c18758a30a985cda686a3dbe6fd769b6493"
+  },
+  "slime/scripts/models/qwen2.5-32B.sh": {
+    "kind": "file",
+    "sha256": "62af5a84cd362f6e826bf89397b3dc8813310f9821d425ea3d674fdfd2ea6f08"
+  },
+  "slime/scripts/models/qwen2.5-3B.sh": {
+    "kind": "file",
+    "sha256": "7f0fbca043a1c4137cfc89ed1fc52e428bd490861949d3810c63a60703a48f89"
+  },
+  "slime/scripts/models/qwen2.5-7B.sh": {
+    "kind": "file",
+    "sha256": "3fdcb318a9471563596f2c20eb1d838b54b9afdead9b3f12fce1f56891b3d49e"
+  },
+  "slime/scripts/models/qwen3-0.6B.sh": {
+    "kind": "file",
+    "sha256": "fb18c4097a4a47b2aef27d6fc009d2730c40aa80e071951536f1255bf9c730e1"
+  },
+  "slime/scripts/models/qwen3-1.7B.sh": {
+    "kind": "file",
+    "sha256": "a635dd148a416fdeb60ac8ae09148256f3b7bff5b9022ead4fbc0b6829f3572b"
+  },
+  "slime/scripts/models/qwen3-14B.sh": {
+    "kind": "file",
+    "sha256": "423df74818484c889b33ef90d7741030d99a34ecb348b1f4bbcead63918d6214"
+  },
+  "slime/scripts/models/qwen3-235B-A22B.sh": {
+    "kind": "file",
+    "sha256": "46d077c69ba0c56c24e9bf7fb3258e8bf53b8707d9e8720e99567fddf6c2def8"
+  },
+  "slime/scripts/models/qwen3-30B-A3B.sh": {
+    "kind": "file",
+    "sha256": "0416de824854e84ceccadd41f353693f4b4369ad26964d74883017751a5667b2"
+  },
+  "slime/scripts/models/qwen3-32B.sh": {
+    "kind": "file",
+    "sha256": "c0d0ac3157ed9b03d1074abd964197e4c77806bacb7da1d1aaba6cfbdaa19515"
+  },
+  "slime/scripts/models/qwen3-4B-Instruct-2507.sh": {
+    "kind": "file",
+    "sha256": "bdc8ab74db97eb695c46e97f7532f85f0bc30763a88289db37d7a7d04e912f26"
+  },
+  "slime/scripts/models/qwen3-4B.sh": {
+    "kind": "file",
+    "sha256": "c550229192100533401e97d1573401dbc61348bc5a7bcb948a5019f9f8bc007f"
+  },
+  "slime/scripts/models/qwen3-8B.sh": {
+    "kind": "file",
+    "sha256": "3729ae9f8148e21812a399a6f758b4b049489022d16e643fe46a080bad09a3ea"
+  },
+  "slime/scripts/models/qwen3-next-80B-A3B.sh": {
+    "kind": "file",
+    "sha256": "298d4154955ab0623d477c4f164fdb946ee24096f4ec8c0b94b740e4bf74b08c"
+  },
+  "slime/scripts/models/qwen3.5-0.8B.sh": {
+    "kind": "file",
+    "sha256": "8ffec200b42d5fb5e8798240e14bb964f30921f8dc413e9c0c813754a5949c3e"
+  },
+  "slime/scripts/models/qwen3.5-27B.sh": {
+    "kind": "file",
+    "sha256": "7faa8dd7c964f05b34544beefa11317a972fdcb94cda5a1866041e8144580f8b"
+  },
+  "slime/scripts/models/qwen3.5-2B.sh": {
+    "kind": "file",
+    "sha256": "970bd43d8696a91c793f40105864f3a0342f9f7cc6dbf7c1d713717a736066f9"
+  },
+  "slime/scripts/models/qwen3.5-35B-A3B-vl.sh": {
+    "kind": "file",
+    "sha256": "6817c2f8045674a3db8e8c3c1c4e144d6cbd9a283ec8f64ddc2865975ed4a4a9"
+  },
+  "slime/scripts/models/qwen3.5-35B-A3B.sh": {
+    "kind": "file",
+    "sha256": "23d8f3afd74bfcaded10b190d306a67cad9594b0ac27a2fe66c5084137bad94d"
+  },
+  "slime/scripts/models/qwen3.5-4B.sh": {
+    "kind": "file",
+    "sha256": "b0f36a96bb99a7bcacee3076e316d487c100f100963cc03cd8a36226085e4f39"
+  },
+  "slime/scripts/models/qwen3.5-9B.sh": {
+    "kind": "file",
+    "sha256": "b57ac94699e99e00f7d713c5be2bed80367b3689c4ac3c0b3b4aae6326310076"
+  },
+  "slime/scripts/run-deepseek-r1.sh": {
+    "kind": "file",
+    "sha256": "eda05d6313ada6343a8775df3814dfa9c2920cdb2fd0838de2b31b8f343d2751"
+  },
+  "slime/scripts/run-glm4-9B.sh": {
+    "kind": "file",
+    "sha256": "f800f6a6fd0866ec38ae15a55c52b62c1c812f90fcaba47b8205069f6c22c4ef"
+  },
+  "slime/scripts/run-glm4.7-30B-A3B.sh": {
+    "kind": "file",
+    "sha256": "179358dcea66442e5edc338e38ce91232554323f48f08d2906c211d8e27cbe14"
+  },
+  "slime/scripts/run-glm4.7-355B-A32B.sh": {
+    "kind": "file",
+    "sha256": "777278e1f836620c8d774c1dfa148b41ea338841f546672eaeb50e046ad421d3"
+  },
+  "slime/scripts/run-glm5-744B-A40B.sh": {
+    "kind": "file",
+    "sha256": "3ff5a2a0d59f67de89ac5fde12a0a08dcb87deaeefa3a360a438ae503eac5e40"
+  },
+  "slime/scripts/run-glm5.2-744B-A40B.sh": {
+    "kind": "file",
+    "sha256": "eb00b0855f387dd9a4baf390ca382f52f13ece7bc4d2245cb8d334329007bb59"
+  },
+  "slime/scripts/run-kimi-k2-Instruct.sh": {
+    "kind": "file",
+    "sha256": "f50d2fc8ed0386fc7da29d0d0ded1b9b61f90614b31544831843c509bcb05927"
+  },
+  "slime/scripts/run-kimi-k2-Thinking.sh": {
+    "kind": "file",
+    "sha256": "56ff0d2156e45b307979e6c405d1987e1947c5400a975bbab3b81390cd626669"
+  },
+  "slime/scripts/run-mimo-7B-rl-eagle.sh": {
+    "kind": "file",
+    "sha256": "25b53da95fec9300b8a9b66bc10f71f2ab86efcd5af33fa811ae78fa81a366ce"
+  },
+  "slime/scripts/run-minimax-m2.sh": {
+    "kind": "file",
+    "sha256": "46b1df9c9fc69e8515edc9aed2dc270e883cdec11d6c9f9c501c1b8b2671a8f2"
+  },
+  "slime/scripts/run-moonlight-16B-A3B.sh": {
+    "kind": "file",
+    "sha256": "c27ae09b5edd2058524c25a6860036b2b0f00c487d29c5f672b54094deb734bc"
+  },
+  "slime/scripts/run-qwen2.5-0.5B-gb10-smoke.sh": {
+    "kind": "file",
+    "sha256": "5dd09bb96d0dba279533555353676f5d468130e9e514325041a4b912f1394cb8"
+  },
+  "slime/scripts/run-qwen2.5-0.5B-reproducibility.sh": {
+    "kind": "file",
+    "sha256": "60a387674750139aed1d0d3c4de0a4d7cddae551860bb65e0921b37b870597cf"
+  },
+  "slime/scripts/run-qwen3-235B-A22B-sft.sh": {
+    "kind": "file",
+    "sha256": "acf54c52c35ab50928f2ab2f879ed44d73ae946f6ddfdfac3a4490ae194467b7"
+  },
+  "slime/scripts/run-qwen3-235B-A22B.sh": {
+    "kind": "file",
+    "sha256": "44fdd561f37221719de2c8ae7c0eea9c3da1e45660c03c8b1c4414d58c01121b"
+  },
+  "slime/scripts/run-qwen3-30B-A3B.sh": {
+    "kind": "file",
+    "sha256": "0ff71648fc7a0dfaee8b61fcce9f50f3fa5086a03668a5651a445a6203c34e4e"
+  },
+  "slime/scripts/run-qwen3-32B.sh": {
+    "kind": "file",
+    "sha256": "e1c624c25e274dce4816b64c5bf01d1719303b3aaac0e04b5f742adeecfae436"
+  },
+  "slime/scripts/run-qwen3-4B-amd.sh": {
+    "kind": "file",
+    "sha256": "14a836085944c3c97b92928bdbfc8f9cd6d342eed573c370dd1a7d50b9d5bb4f"
+  },
+  "slime/scripts/run-qwen3-4B-base-sft.sh": {
+    "kind": "file",
+    "sha256": "890238c0526db33f27587976e72057f435805e316f6f0567f40cd8cb4cf8fd14"
+  },
+  "slime/scripts/run-qwen3-4B.sh": {
+    "kind": "file",
+    "sha256": "248d22b87e8b2de6e4121bdfcf1153d24c9e8f796bcc29f5d7e4ffdab6b50488"
+  },
+  "slime/scripts/run-qwen3-next-80B-A3B.sh": {
+    "kind": "file",
+    "sha256": "4a04f264afcb9429a59b239f9bce8842db9059d0a771bf2d9083146c74262cd2"
+  },
+  "slime/scripts/run-qwen3.5-27B.sh": {
+    "kind": "file",
+    "sha256": "f6c653a6580a6997554805857136ec9a14d807d6d2c2447e7c7679f3c0a426b6"
+  },
+  "slime/scripts/run-qwen3.5-35B-A3B-sft.sh": {
+    "kind": "file",
+    "sha256": "d9d6ff1c407f8d67adc64c981408f887b108d7416aa6ad0e41908adecf5874db"
+  },
+  "slime/setup.py": {
+    "kind": "file",
+    "sha256": "73d4950b2112e3b8b4bde070bb2fc3c32a427060bd9abc8e77c42dfe9caf2401"
+  },
+  "slime/slime/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/agent/__init__.py": {
+    "kind": "file",
+    "sha256": "db8ee13dd4891e4b93237ed440d69be2d063986f5bcb20cbe9fcfd6b2ed83a82"
+  },
+  "slime/slime/agent/adapters/__init__.py": {
+    "kind": "file",
+    "sha256": "bb11e40d81542a26b4a4824df683cb6ea9145c74ce8deec328982e34da8f2150"
+  },
+  "slime/slime/agent/adapters/anthropic.py": {
+    "kind": "file",
+    "sha256": "66ef380a3fc2ee8e582041ac8948857eea5e8a24ff5e9816a51320abedbd8980"
+  },
+  "slime/slime/agent/adapters/common.py": {
+    "kind": "file",
+    "sha256": "9d3947130814c9efba6eebb831e0b5d65862da66180e0010370248f65683dd1d"
+  },
+  "slime/slime/agent/adapters/openai.py": {
+    "kind": "file",
+    "sha256": "e68af264a6ab6436298091a3374d61bc75f128610402c0f5ae201e1a01133af0"
+  },
+  "slime/slime/agent/aiohttp_threaded.py": {
+    "kind": "file",
+    "sha256": "651e5aedbf9529d5f2e458bc6fbbd9a1931ec31bc00c9b8c911b6762d1209268"
+  },
+  "slime/slime/agent/harness/__init__.py": {
+    "kind": "file",
+    "sha256": "9446446dc967ce4863b959e228917e494f7d2c78f7b452a8eeace4695c9f18e8"
+  },
+  "slime/slime/agent/harness/claude_code.py": {
+    "kind": "file",
+    "sha256": "94765e59b431da1399cf09fada8693c20971a27e666d8fdb1308b3267b2d2af4"
+  },
+  "slime/slime/agent/harness/codex.py": {
+    "kind": "file",
+    "sha256": "da9f815f777c6268c98203d80afd67d0a079976e7f5f968fba7cc79131f9f1b4"
+  },
+  "slime/slime/agent/harness/common.py": {
+    "kind": "file",
+    "sha256": "57919ecd4240f6631678f4ea395e2e0a784403ed4bb893c5e42992eabbe4b1fa"
+  },
+  "slime/slime/agent/parsing.py": {
+    "kind": "file",
+    "sha256": "2c29ed7718fbdbdf88fecd160f528eec22c88e253fc3c3788e271433ffd13b33"
+  },
+  "slime/slime/agent/sandbox.py": {
+    "kind": "file",
+    "sha256": "0c1b475e02ccce0ed3089c9f73272c755d5090f7e63e9be909a44c8a40339d91"
+  },
+  "slime/slime/agent/trajectory.py": {
+    "kind": "file",
+    "sha256": "6dbb7bec446d81fa0542a4c954d458b4a11edab6776b45a63bc33bca08dd0469"
+  },
+  "slime/slime/backends/__init__.py": {
+    "kind": "file",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "slime/slime/backends/megatron_utils/__init__.py": {
+    "kind": "file",
+    "sha256": "31f78f41ca5bbd418446a1b24ff674b304583b2ef1bace3bbd12ac389fbf8200"
+  },
+  "slime/slime/backends/megatron_utils/actor.py": {
+    "kind": "file",
+    "sha256": "fba3c8d92c612765c7820a3c3a240e02e51c437f5b1edb5b688eb90df3125d82"
+  },
+  "slime/slime/backends/megatron_utils/alignment/__init__.py": {
+    "kind": "file",
+    "sha256": "911f27fe140e5bfbcdd1c29b5f71e7be699f8ba0277cc10596a290d6f72f3472"
+  },
+  "slime/slime/backends/megatron_utils/alignment/deepgemm_forward.py": {
+    "kind": "file",
+    "sha256": "f7145fc861462ec1604d1ce481611e29927adaaab01a6904b30c389cfad9a860"
+  },
+  "slime/slime/backends/megatron_utils/alignment/deepgemm_moe_forward.py": {
+    "kind": "file",
+    "sha256": "22493ae8977a03f8cc5e48d4c630b477af2cf9177792037ef2caf9dafc5cda6a"
+  },
+  "slime/slime/backends/megatron_utils/alignment/deterministic_route_kernels.py": {
+    "kind": "file",
+    "sha256": "ae89f68241c22ec2aedb2a258b21073517d5a127f42c4ee64ffa173944a66f4e"
+  },
+  "slime/slime/backends/megatron_utils/alignment/env.py": {
+    "kind": "file",
+    "sha256": "b95127ea4b665bc591ea22d71d6b41e93e2f3f222096b4d93c5a4b710b13d36e"
+  },
+  "slime/slime/backends/megatron_utils/alignment/layerwise_alignment.py": {
+    "kind": "file",
+    "sha256": "0c743547b719e8edbf60f17a8a98af398f1f1c73507e36a7087909a69d46f4e9"
+  },
+  "slime/slime/backends/megatron_utils/arguments.py": {
+    "kind": "file",
+    "sha256": "1575b7d534ca3cef62c3407c5bd1bf7988cadbfd9d2d0fc558a55ab1031edb3d"
+  },
+  "slime/slime/backends/megatron_utils/checkpoint.py": {
+    "kind": "file",
+    "sha256": "75edf04375b2e0951e75f4c1e1941da1dced5ec42a1f31ad37c6d365ad3db8ec"
+  },
+  "slime/slime/backends/megatron_utils/ci_utils.py": {
+    "kind": "file",
+    "sha256": "fd55f6fed9d57f91666dd0764ba812c08de5ed2d7e83b1c3a7b577ff6dbd2e1c"
+  },
+  "slime/slime/backends/megatron_utils/cp_utils.py": {
+    "kind": "file",
+    "sha256": "01cc3c6cfa3574d233908af0d808099178a9c7f3319661a712bd88641925b80a"
+  },
+  "slime/slime/backends/megatron_utils/data.py": {
+    "kind": "file",
+    "sha256": "581ed42c5bd2dcfe0af5b262cce8d5fee1719bf30da4ca3ec9bb1de73806abef"
+  },
+  "slime/slime/backends/megatron_utils/hf_checkpoint_saver.py": {
+    "kind": "file",
+    "sha256": "6b2907ece88551921ba9ddbbad5a2f0899d5d3e68888e1afa41ea7c5f392562d"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/__init__.py": {
+    "kind": "file",
+    "sha256": "e6e7f98e92900d8a37ca95fae8327206b3b456e1a477d6d60653d4f772b4b5e5"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/common.py": {
+    "kind": "file",
+    "sha256": "ecf8bf75640e0d5f2873c7a7af4e38b469a47a1284eb683c49071fa8e459503e"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/deepseek.py": {
+    "kind": "file",
+    "sha256": "fa3fe5642880a46c2f5e536780630ca599b63791d926b76a76b3cb2f91e1b6e6"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/glm.py": {
+    "kind": "file",
+    "sha256": "f5c02cd10e1939f6d07e8fb17f247dc2a5b87d3247ac3abf9b40c2ee5bfb69e3"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/qwen.py": {
+    "kind": "file",
+    "sha256": "268562398419f7c9b29c3734b8f96da6197946204392af37881c98828ef8ef8a"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/qwen3_5.py": {
+    "kind": "file",
+    "sha256": "7a808f639f473874dd40cfe3283642fb159d7076d2a1a492c16e540cdc882a9a"
+  },
+  "slime/slime/backends/megatron_utils/hf_to_megatron/qwen3_next.py": {
+    "kind": "file",
+    "sha256": "264052beadd472702668bc07782861a1f2799cfb7ebd58ac3d0e8cab25283034"
+  },
+  "slime/slime/backends/megatron_utils/initialize.py": {
+    "kind": "file",
+    "sha256": "3c858fb9257125fec3259e43b9495e7d917874db95133ce9ca183a052ae6d29a"
+  },
+  "slime/slime/backends/megatron_utils/kernels/fp8_kernel.py": {
+    "kind": "file",
+    "sha256": "0c3f8121d9423de9b5109c9015f1b5e4bb0622574fa00b38c267e900ac4bd487"
+  },
+  "slime/slime/backends/megatron_utils/kernels/int4_qat/fake_int4_quant_cuda.cu": {
+    "kind": "file",
+    "sha256": "4b3a76a5f6e59c98dbddcca42c74a42e2f212f3fc87ef9c4044f232161ca215b"
+  },
+  "slime/slime/backends/megatron_utils/kernels/int4_qat/setup.py": {
+    "kind": "file",
+    "sha256": "e586031ecfd775e386f0402ce903b2ab2de92df5b5bf393b88da6d155d86609d"
+  },
+  "slime/slime/backends/megatron_utils/loss.py": {
+    "kind": "file",
+    "sha256": "f3a0f85db2d5278fa3660ea6a4c417987c9942ad78f476a6bb49faaceec67631"
+  },
+  "slime/slime/backends/megatron_utils/megatron_patch/__init__.py": {
+    "kind": "file",
+    "sha256": "a81af02088b704548e4d331c1a855b57efb1a9d8d43e7e7fd67b9b456b149ede"
+  },
+  "slime/slime/backends/megatron_utils/megatron_patch/megatron_chunked_grad_coalesce_patch.py": {
+    "kind": "file",
+    "sha256": "05b97370b690e5ed4abd9a9936049de5f4c8bd19baf9fa14fb719763e315fe7c"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/__init__.py": {
+    "kind": "file",
+    "sha256": "3655082fa0760b8776eab955a34cb65d15402d193036f02921675d1cd4186d7c"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/deepseekv3.py": {
+    "kind": "file",
+    "sha256": "dfab14f4b938525798fb4bd05195e43b8f267de34671808a5d0cfeb64019341f"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/glm4.py": {
+    "kind": "file",
+    "sha256": "fdc2a52fa21e7f9b526b0cffeee97801cc3a28990a8ace7d33809c6044d4283e"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/glm4moe.py": {
+    "kind": "file",
+    "sha256": "5e84f368481c5d713907d6a32de0424d3b58fe96b22d8de4ef8375626c762969"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/llama.py": {
+    "kind": "file",
+    "sha256": "e9223b10d7bf62b9acb3314f909831b0b12502451595763668c541ae0cd28399"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/mimo.py": {
+    "kind": "file",
+    "sha256": "20864f3628f3a8f2a146dc85d159dfd8a83e247a729e1e34eb067ea503797029"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/minimax_m2.py": {
+    "kind": "file",
+    "sha256": "c90cac72fb21ae8a2804b76dd3eefa87231e900216a60d26292bc1d5a3a6cf92"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/processors/__init__.py": {
+    "kind": "file",
+    "sha256": "cd62112ae6d759022537cde98c4a78de262912dd9934cb05f4bc158c45a7e271"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/processors/padding_remover.py": {
+    "kind": "file",
+    "sha256": "64223e774ad8dbf51e92fad6dca181cc0123e5ba80e99c86fa74a544c70e4659"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/processors/quantizer_compressed_tensors.py": {
+    "kind": "file",
+    "sha256": "8cca80e9d2d29eace382568ee2756c983cb77d0dca8587a9434510760e107598"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/processors/quantizer_fp8.py": {
+    "kind": "file",
+    "sha256": "d383f6e40120651caf55e107f30d44e31b8286e2b92d1e429ce90a578d6ebb04"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/qwen2.py": {
+    "kind": "file",
+    "sha256": "fb18f23241200815a3ef21ea9eba8dd303877af7286a31bb814857342f9a2804"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/qwen3_5.py": {
+    "kind": "file",
+    "sha256": "c1a786d5d54c7f27bd84394a6ebfea755bc2694b2aabd7549633a93939b6a704"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/qwen3_next.py": {
+    "kind": "file",
+    "sha256": "88792a45b2652b58ea7c6831a2f107ee8a71a24cd13de0ea081312b9eb926cf6"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/qwen3_vl.py": {
+    "kind": "file",
+    "sha256": "823f53abfd272697c8c82876698d53d83101a0c66271d4d84ef49653b5b8c7b8"
+  },
+  "slime/slime/backends/megatron_utils/megatron_to_hf/qwen3moe.py": {
+    "kind": "file",
+    "sha256": "59aef122cc8e193e69e8bc46b2a22fbb73daa28b5f5b9da06bb53a471dbbc5b9"
+  },
+  "slime/slime/backends/megatron_utils/misc_utils.py": {
+    "kind": "file",
+    "sha256": "8031be98b7aedbf84a3ad0802821994c6fb091d01d9c743ef3c4a6ece52b71c7"
+  },
+  "slime/slime/backends/megatron_utils/model.py": {
+    "kind": "file",
+    "sha256": "f413ab3d486af8cdc0e16ccd7c1780ee25e15d9100c27d63b19e093c0fece5fa"
+  },
+  "slime/slime/backends/megatron_utils/model_provider.py": {
+    "kind": "file",
+    "sha256": "c131ce6ea8fa1d0fed1bf2a0e843634f7dfa8099656dc5ae3b1e60f0b24eeb31"
+  },
+  "slime/slime/backends/megatron_utils/server/__init__.py": {
+    "kind": "file",
+    "sha256": "45767603d41bdb4041143c2b06b58a58fe07ca5ae9dbf9d3a3b9e4ce4cbd37c5"
+  },
+  "slime/slime/backends/megatron_utils/server/arguments.py": {
+    "kind": "file",
+    "sha256": "b23a5a912be6f638a896dab9d4ec33509b36d935678687727e5b9ecdec75f227"
+  },
+  "slime/slime/backends/megatron_utils/server/logprob_utils.py": {
+    "kind": "file",
+    "sha256": "3856f604dad960400cef66794c05fe20617a28275472df33952be6ba6c747873"
+  },
+  "slime/slime/backends/megatron_utils/server/megatron_server.py": {
+    "kind": "file",
+    "sha256": "43ad090936020c367a6cdaa6c7c9589a76f99149438a74ff9a7e404268ea95a4"
+  },
+  "slime/slime/backends/megatron_utils/sglang.py": {
+    "kind": "file",
+    "sha256": "45e85af89e82d12bfc97d83d10e125d93664568adbd2b8fd963ae06a07f265ea"
+  },
+  "slime/slime/backends/megatron_utils/stateless_adam.py": {
+    "kind": "file",
+    "sha256": "795a7f9be09744364b06a5d3170db46ab4528857a68a3afa425c03895da7ae1b"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/common.py": {
+    "kind": "file",
+    "sha256": "bd85d38403df2a0fbebb27add51c9c22aa7106bdcb23857af88fd3a836dab815"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/expert_routing.py": {
+    "kind": "file",
+    "sha256": "1f6ec5d3e0e3f8a0be1435af1741d7f9fac159ea47ac05a84fa6c256d8feb7c2"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/hf_weight_iterator_base.py": {
+    "kind": "file",
+    "sha256": "c872c6a3b704b22c7fb88a8db61f28def394af342463d85d5d706e11d96599ed"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/hf_weight_iterator_direct.py": {
+    "kind": "file",
+    "sha256": "9490fb8b9f7ba678276eef482b233170da4ad2064deb18402c7af874c9b80096"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/update_weight_from_disk.py": {
+    "kind": "file",
+    "sha256": "431c86f1afb4386dfa7e9a240e383de7878260c3ae0175d84506c170008acac3"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/update_weight_from_disk_delta.py": {
+    "kind": "file",
+    "sha256": "c86c030fc0704fb927c88c59c281e661c30722bf445122427e6b36cbd888f31e"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/update_weight_from_distributed.py": {
+    "kind": "file",
+    "sha256": "8f1c0132395f3450ab1b1a94a1ad051c58dcac08deadcd388817ffe331999f26"
+  },
+  "slime/slime/backends/megatron_utils/update_weight/update_weight_from_tensor.py": {
+    "kind": "file",
+    "sha256": "933422d60a37ecbcc071a83e690bafbf4a6b8c41051925a43ffaf975f4fda3f7"
+  },
+  "slime/slime/backends/sglang_utils/__init__.py": {
+    "kind": "file",
+    "sha256": "d2881dffa74994f0ca7e4ba39882e5fa61e7a21d442d6ca7a721bfd75ce0d673"
+  },
+  "slime/slime/backends/sglang_utils/arguments.py": {
+    "kind": "file",
+    "sha256": "9774ed10baafc90c5ddcaa2e435f11721cc76f298e275e2f34f3cfe799fa1e8b"
+  },
+  "slime/slime/backends/sglang_utils/external.py": {
+    "kind": "file",
+    "sha256": "06d3e561bed3110bfff44b3a35784b85f4945daa8a95a9ed20e0f4ba1eb8c593"
+  },
+  "slime/slime/backends/sglang_utils/jit_kernels/csrc/gemm/glm5_router_gemm.cuh": {
+    "kind": "file",
+    "sha256": "22538cd54a7a7c52166724643ab3e036fc574f4edf3c996fe74dd99fa8736be0"
+  },
+  "slime/slime/backends/sglang_utils/server_control.py": {
+    "kind": "file",
+    "sha256": "52f78cb350cb91030f701c0fb1801770269b0560515339e82bf146800cff4afa"
+  },
+  "slime/slime/backends/sglang_utils/sglang_config.py": {
+    "kind": "file",
+    "sha256": "3b53b1050daa923191711e898928638d0cb7a19406178e6cd49aeb07d813f58e"
+  },
+  "slime/slime/backends/sglang_utils/sglang_engine.py": {
+    "kind": "file",
+    "sha256": "bca020ccc5f54be9dd61bab7ddb34a71067718cbe90420f62c2c95cae586c16e"
+  },
+  "slime/slime/observability/__init__.py": {
+    "kind": "file",
+    "sha256": "e8a00cec93b14f44ceafa0101c4621900450a3394f4c072d179e556882ed9c66"
+  },
+  "slime/slime/observability/logging_utils.py": {
+    "kind": "file",
+    "sha256": "ab2bf00236452e35c4dcff4c1c13dcb67bb57f64a099a57a28080c990a683aa9"
+  },
+  "slime/slime/observability/metric_utils.py": {
+    "kind": "file",
+    "sha256": "4e51ae13e8cd969ed7ef59701d06479338df7085cf2465a47ed94748f40d60a0"
+  },
+  "slime/slime/observability/profile_utils.py": {
+    "kind": "file",
+    "sha256": "ab66018028892dfb9061214e1c3252838bedaa55e26d0a5c7c0074c707abf876"
+  },
+  "slime/slime/observability/rollout_data_utils.py": {
+    "kind": "file",
+    "sha256": "b41fac96d1a64a387bebb24262fdbcc17c0e9f037b4a20464b3d647246a6416b"
+  },
+  "slime/slime/observability/rollout_metrics.py": {
+    "kind": "file",
+    "sha256": "457adf7d1686f17707fec4a293a5fbe396358e0143c5fdcd4228a274b28257d7"
+  },
+  "slime/slime/observability/tensorboard_utils.py": {
+    "kind": "file",
+    "sha256": "da81b76acf4b077baa2022857e6d503a7f4090972c3063ac95e3e9fc41e5944f"
+  },
+  "slime/slime/observability/timer.py": {
+    "kind": "file",
+    "sha256": "8154c9a5a89673bd250dbfbbcca4a661c6c0b2533291dceca82135da5e279393"
+  },
+  "slime/slime/observability/trace_utils.py": {
+    "kind": "file",
+    "sha256": "c3b135fbb611ab083b2daedea7948514347b721c2e5dabb596ab860fe16b8f6b"
+  },
+  "slime/slime/observability/train_data_utils.py": {
+    "kind": "file",
+    "sha256": "69d4356fad6b0f8ff77aba31a97e7e7654fdc480a5b68f8aa83a719a8014b39b"
+  },
+  "slime/slime/observability/train_metric_utils.py": {
+    "kind": "file",
+    "sha256": "39eddc0e9ebd0448906e5c7a33e4011434753005dbe17e211326ed5cb5c4c612"
+  },
+  "slime/slime/observability/wandb_utils.py": {
+    "kind": "file",
+    "sha256": "8ac8f6f02a20f4fa8b5586e9ca5a5e2effd49bbe2a561a1c9d9da990c5e2aacb"
+  },
+  "slime/slime/ray/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/ray/actor_group.py": {
+    "kind": "file",
+    "sha256": "779d845723fa96b70490726685955ba7fcddc28e92ba6125c3dd864af10199d6"
+  },
+  "slime/slime/ray/placement_group.py": {
+    "kind": "file",
+    "sha256": "3c5064102ea36dd65ca74af9e6b8283f0b55dd8b0d1582be2821854014e81d4a"
+  },
+  "slime/slime/ray/ray_actor.py": {
+    "kind": "file",
+    "sha256": "4850b94683590d7e2248789e6a2ab271080cdbdbc98db8b8842ddfffc25f0556"
+  },
+  "slime/slime/ray/rollout.py": {
+    "kind": "file",
+    "sha256": "a54dea5e8e3c2ce4791c97bec795b4d78a423aa9f4f8adc9f8705b1475eb5b4e"
+  },
+  "slime/slime/ray/rollout_validation.py": {
+    "kind": "file",
+    "sha256": "0e97157cb1f47268eb593a2ea58bdd7ca9f843534581b71986d142ce8fd27b99"
+  },
+  "slime/slime/ray/train_actor.py": {
+    "kind": "file",
+    "sha256": "cdb81874d16ea113a624f4386f42262746594be4356bfa9ab3dafd290e168f34"
+  },
+  "slime/slime/ray/utils.py": {
+    "kind": "file",
+    "sha256": "1003302550d7c9b083c89b87381a13b571bda1e8a6b6dbbeb1b75013205eaa87"
+  },
+  "slime/slime/rollout/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/rollout/_fanout_test_helpers.py": {
+    "kind": "file",
+    "sha256": "d1dc3c744e80778b2de447c324ae4ef432e24df0edd4abd679dba55bcac31d2d"
+  },
+  "slime/slime/rollout/base_types.py": {
+    "kind": "file",
+    "sha256": "6195ae1d3f122e9b2fd3ed6b63f19aea239275ca79b47ee074babf2f8f2b3f40"
+  },
+  "slime/slime/rollout/data_source.py": {
+    "kind": "file",
+    "sha256": "446595578aff88fac1637b8956a245853db1167e7964896bbab2fff61b1db616"
+  },
+  "slime/slime/rollout/filter_hub/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/rollout/filter_hub/base_types.py": {
+    "kind": "file",
+    "sha256": "718862b02c21840963f9fec72b7215b7a6ba7f02d7cbb2d210f192e5fe6fec2a"
+  },
+  "slime/slime/rollout/filter_hub/dynamic_sampling_filters.py": {
+    "kind": "file",
+    "sha256": "2331736a634bee9864e637d45f8518ea6f4e86660eac6f35c78bbf38d586be5e"
+  },
+  "slime/slime/rollout/forge_load.py": {
+    "kind": "file",
+    "sha256": "0957f1b42ef0b8ce5552e5050eaad82a08ae58134d278b6adc84e88ce9f4aa73"
+  },
+  "slime/slime/rollout/fully_async_rollout.py": {
+    "kind": "file",
+    "sha256": "43abaaea6f47b2ef7700dcc353da84d7af28d06a98c421da14a2f9dbd0027178"
+  },
+  "slime/slime/rollout/on_policy_distillation.py": {
+    "kind": "file",
+    "sha256": "a0adf4664c9d9c8121bb6630f9d9fc2df57d5b60e4208a2dcaa8a2fc2d1016ab"
+  },
+  "slime/slime/rollout/rm_hub/__init__.py": {
+    "kind": "file",
+    "sha256": "bbfcb71820abbb44b2b8946726a31b2d7bc54b27e36f52c38e8b6422808507bc"
+  },
+  "slime/slime/rollout/rm_hub/deepscaler.py": {
+    "kind": "file",
+    "sha256": "7be863a12650d5054f5245bee0a9f01e1efe4b314db2e272c9d4261e18feb0a0"
+  },
+  "slime/slime/rollout/rm_hub/f1.py": {
+    "kind": "file",
+    "sha256": "89457e8e95d7acdacd52a39044dd0a4b0c5d4cfa638dc1cdb8ce96e03620de6b"
+  },
+  "slime/slime/rollout/rm_hub/gpqa.py": {
+    "kind": "file",
+    "sha256": "7d39fc87c5422501e0fa44d4da2578646ed55d3f411db242a8800c3f0398c4d7"
+  },
+  "slime/slime/rollout/rm_hub/ifbench.py": {
+    "kind": "file",
+    "sha256": "fa3e2475b676714dedd0bef56ef45febe694f673eb331c3dcddf6b3bfb2ebb83"
+  },
+  "slime/slime/rollout/rm_hub/math_dapo_utils.py": {
+    "kind": "file",
+    "sha256": "3d6b61357e2ee8f1704ba0eb1726ea2dd65dbf9c76e963f20d5ff6598b8f7b23"
+  },
+  "slime/slime/rollout/rm_hub/math_utils.py": {
+    "kind": "file",
+    "sha256": "cd884f4686ab3a1e0664ea09b2c15a5ebbf2b7d40b799c68ae5bbc0978637d32"
+  },
+  "slime/slime/rollout/sample_hooks.py": {
+    "kind": "file",
+    "sha256": "d2054c14b6ca3e7582af26324f896bde6c624a633315f78c1469388e30312cf8"
+  },
+  "slime/slime/rollout/sft_rollout.py": {
+    "kind": "file",
+    "sha256": "bfb6b424a285ba30796867d4bfda4fa33f7c9f5dd6882504224e28c942ab5e47"
+  },
+  "slime/slime/rollout/sglang_rollout.py": {
+    "kind": "file",
+    "sha256": "59a4e34b2f257fba540cf26782c9b84e7633f3437ea41787d3c02fba920e3c7c"
+  },
+  "slime/slime/rollout/sglang_streaming_rollout.py": {
+    "kind": "file",
+    "sha256": "8046298d721ab7eaefbe7ffd039b6d9c9fa32f41fef779eb3ef6362eb30e6eca"
+  },
+  "slime/slime/rollout/sleep_rollout.py": {
+    "kind": "file",
+    "sha256": "5c3dbcc2e9a595e785446ea8e3ff470a198396815216724a03d879375f6b4b9d"
+  },
+  "slime/slime/utils/__init__.py": {
+    "kind": "file",
+    "sha256": "5043a8723e70046ef3298939bf3f45c11dabfdf15599dcd7519900edf83e332f"
+  },
+  "slime/slime/utils/accelerator/__init__.py": {
+    "kind": "file",
+    "sha256": "bc7560970e48563985eb56147b151a5fe75d4d6dba420346e9c07752c4f46726"
+  },
+  "slime/slime/utils/accelerator/base.py": {
+    "kind": "file",
+    "sha256": "2642bd1859b641e2cc2727b90c219e570f9561c40f0e3d2afe9eb2f630c8ac20"
+  },
+  "slime/slime/utils/accelerator/cuda.py": {
+    "kind": "file",
+    "sha256": "bd4e5d9de117e1811dc0887c497a0d5f59319697915fb831661ed57e74f4d2f0"
+  },
+  "slime/slime/utils/accelerator/musa.py": {
+    "kind": "file",
+    "sha256": "c1255dd97561348f99580de89756e807c3bfd2e40d4105c87ed7b2efe420052e"
+  },
+  "slime/slime/utils/accelerator/torch_accelerator.py": {
+    "kind": "file",
+    "sha256": "b48b6f4de2fd8a22dfc1cbd7f92164112958d0de08d9d5aaaa16c282881ae656"
+  },
+  "slime/slime/utils/arguments.py": {
+    "kind": "file",
+    "sha256": "434f78ffce7829fb23854729f11d9af64d4ae6a71c467b402d2b4f330f09bfd5"
+  },
+  "slime/slime/utils/async_utils.py": {
+    "kind": "file",
+    "sha256": "ed1dac4267d17139e06d63c857a953fafb8bed0a0b229ff8fda82126a0c1bfcb"
+  },
+  "slime/slime/utils/data.py": {
+    "kind": "file",
+    "sha256": "4bdc691a1aabe2b8b6c8959c78f3ffbe0e3d13fcdac99d68de9d0f4738286248"
+  },
+  "slime/slime/utils/disk_delta.py": {
+    "kind": "file",
+    "sha256": "67ebd9daea15a7d7999c076db9d3fe8a96794e91756d2ccd8970374d206fe9ba"
+  },
+  "slime/slime/utils/distributed_utils.py": {
+    "kind": "file",
+    "sha256": "ee95a4775eceee51e6fc693236c2cd1f7d87d6530fdd49a46126e7c60f47dce4"
+  },
+  "slime/slime/utils/dp_schedule.py": {
+    "kind": "file",
+    "sha256": "ed87386712ecc0e296f038354878c9dd6f8ab5561832febe0f5f272caa9cfd02"
+  },
+  "slime/slime/utils/eval_config.py": {
+    "kind": "file",
+    "sha256": "36928aed38b268335cd70cbe79881fbb30fc9a59d6678277b072b5369e257cec"
+  },
+  "slime/slime/utils/external_utils/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime/utils/external_utils/command_utils.py": {
+    "kind": "file",
+    "sha256": "20c6419767af43869557de7bd9d6bd50a09d1cecf27a463933453808e21069de"
+  },
+  "slime/slime/utils/external_utils/typer_utils.py": {
+    "kind": "file",
+    "sha256": "f1a917227e9a25042151c28486d6170f26bd4a8dc220c8133bd83ddc3afb0035"
+  },
+  "slime/slime/utils/flops_utils.py": {
+    "kind": "file",
+    "sha256": "a4fac22109731915369084f1654ffc73708d4b01765d094a9c6581fb8a54fd6a"
+  },
+  "slime/slime/utils/health_monitor.py": {
+    "kind": "file",
+    "sha256": "72983f0c294264c8186a5580d8f55213b6eabbd7dbdc77c6e4334492ad6a428f"
+  },
+  "slime/slime/utils/http_utils.py": {
+    "kind": "file",
+    "sha256": "a953708eee259279eda814d4a369fde1cb15f3413159182326efb88a710eeaf5"
+  },
+  "slime/slime/utils/mask_utils.py": {
+    "kind": "file",
+    "sha256": "6ecee2a1d5062f5a00028cb6cdd9f0d941b4e28df4f5981a4614facea12e0e5a"
+  },
+  "slime/slime/utils/memory_utils.py": {
+    "kind": "file",
+    "sha256": "56d359a37a8545b0f3160551ae234ed8115da856d0365fdae5a886e95d6d5db0"
+  },
+  "slime/slime/utils/misc.py": {
+    "kind": "file",
+    "sha256": "d96e119b54af3db712b881f404ca0ae8a793982bbd057c103e7838759c437bf0"
+  },
+  "slime/slime/utils/ppo_utils.py": {
+    "kind": "file",
+    "sha256": "0f0ad5ee55ceb27ac7160a8665e324a2a5f57ff32ce1593f587d94ad587179cb"
+  },
+  "slime/slime/utils/processing_utils.py": {
+    "kind": "file",
+    "sha256": "f2429ebb08a024fbd73dd2e7065c9c70b8ba64ef36150014da7b8cfc94e70cb4"
+  },
+  "slime/slime/utils/reloadable_process_group.py": {
+    "kind": "file",
+    "sha256": "0b5e4b3b7389ef6212c17ccd4b41d862d9f99dbece1b4e799325d4b812b4dd80"
+  },
+  "slime/slime/utils/rocm_checkpoint_writer.py": {
+    "kind": "file",
+    "sha256": "6f29a85785a5b40e09e3b28b34e4dfb8007730039ba059863d7bbacef557e6a4"
+  },
+  "slime/slime/utils/routing_replay.py": {
+    "kind": "file",
+    "sha256": "cdd0430f1454ecd1671496f5d83f38c7ee21510525ca45e172fde7277285bc6b"
+  },
+  "slime/slime/utils/seqlen_balancing.py": {
+    "kind": "file",
+    "sha256": "357a736afaf1923a52a76694bc2848571ca15b986721d34dccde00d0e0cc997a"
+  },
+  "slime/slime/utils/tensor_backper.py": {
+    "kind": "file",
+    "sha256": "9c98a53b11c35d59afdcac7bf97be39b53de0889b74d3268825a03668f67e30a"
+  },
+  "slime/slime/utils/types.py": {
+    "kind": "file",
+    "sha256": "0e8aca6bc49dcba30975a5a325e210cd450fbb25b3c0c79c107a27986692816b"
+  },
+  "slime/slime_plugins/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime_plugins/models/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/slime_plugins/models/flash_dot_product_attention.py": {
+    "kind": "file",
+    "sha256": "d1d7823f6e64fb772e45c7db6e8403262a7fd30b83e0a3089e7385e899a4199e"
+  },
+  "slime/slime_plugins/models/glm4.py": {
+    "kind": "file",
+    "sha256": "3c4d2bab8e433f70f2687ef29117b9b7267a69f6b6f369f308965213bb782ff3"
+  },
+  "slime/slime_plugins/models/glm5/glm5.py": {
+    "kind": "file",
+    "sha256": "2f0a1ff77f229bdc9803bba0de3701ac2a4c023cca9659d4f0850943b035f69d"
+  },
+  "slime/slime_plugins/models/glm5/ops/indexer.py": {
+    "kind": "file",
+    "sha256": "318420958d8dfd4cba3970bc63a02e73218c118f5bea5c9048ce3adb63da679c"
+  },
+  "slime/slime_plugins/models/glm5/ops/sparse_mla.py": {
+    "kind": "file",
+    "sha256": "6d4c76e8cbf85621611cde909b9b9883f59bc7c8223bf69437ddd96f35d65e73"
+  },
+  "slime/slime_plugins/models/glm5/ops/tilelang_indexer_bwd.py": {
+    "kind": "file",
+    "sha256": "62deb53a37524c308640923ab35a2b515b2171d0d45ff634aea9c88fc7607b7d"
+  },
+  "slime/slime_plugins/models/glm5/ops/tilelang_indexer_fwd.py": {
+    "kind": "file",
+    "sha256": "39e78f7b5e0e79cb213cca1951aecf7bb826ac6dca5020172aea986d8e81223e"
+  },
+  "slime/slime_plugins/models/glm5/ops/tilelang_sparse_mla_bwd.py": {
+    "kind": "file",
+    "sha256": "80a8b0eb0158dd2f6d5e975521d56e1dbe9a23f0cf6bfd493f137e116b369179"
+  },
+  "slime/slime_plugins/models/glm5/ops/tilelang_sparse_mla_fwd.py": {
+    "kind": "file",
+    "sha256": "a9f6f99d826dc3d173594d703c56ac109810f3b5fb67157661b399ca741a7da0"
+  },
+  "slime/slime_plugins/models/hf_attention.py": {
+    "kind": "file",
+    "sha256": "dec82b0a2d9fb99dc79d6c6138c8a6748881bc1de40600c5aadc4633a5ecdea9"
+  },
+  "slime/slime_plugins/models/learnable_softmax_attention.py": {
+    "kind": "file",
+    "sha256": "37db88778587f1a72528638a76ebbfee2b348f3ec7258ed8c2bcce8d7fc580d5"
+  },
+  "slime/slime_plugins/models/minimax_m2.py": {
+    "kind": "file",
+    "sha256": "95ad45731c972393736dfb11e003d78c04a8672184989cf87c76b8ca63f0a4fa"
+  },
+  "slime/slime_plugins/models/qwen3_5.py": {
+    "kind": "file",
+    "sha256": "7ec4da3bded8aaa39f6f0012ca6f0203dafff128bf04dce588708bfa000ad5eb"
+  },
+  "slime/slime_plugins/models/qwen3_5_vl.py": {
+    "kind": "file",
+    "sha256": "436117d03c2f9af3e541f15618fbb17b1f9f38f04ac0b5337c770c759d4ba20f"
+  },
+  "slime/slime_plugins/models/qwen3_5_vl_utils.py": {
+    "kind": "file",
+    "sha256": "8dc116565b186b7371797b42f2d9dfa5b098e65af9ec5a1b99e84c839a2e162e"
+  },
+  "slime/slime_plugins/models/qwen3_next.py": {
+    "kind": "file",
+    "sha256": "a13c18db429d94c5563d0abcb333d97860b971ae5263e690112ae971dfca4ca2"
+  },
+  "slime/slime_plugins/models/qwen_gdn_backend.py": {
+    "kind": "file",
+    "sha256": "1f9606b6707aef5f8dceaf0bb13b90c779d31503ebba22025f6e68c734aea404"
+  },
+  "slime/slime_plugins/rollout_buffer/README.md": {
+    "kind": "file",
+    "sha256": "0d54a1c9b13ed1579fb422cd93f156768f65588366c1534163fb5297e9ac2681"
+  },
+  "slime/slime_plugins/rollout_buffer/README_zh.md": {
+    "kind": "file",
+    "sha256": "9ac321418af16df6540f110437d2caa411f5681bc6a660a4788b26565db6d5df"
+  },
+  "slime/slime_plugins/rollout_buffer/buffer.py": {
+    "kind": "file",
+    "sha256": "c98b814f731e923d0470e140cf3e6c2faf5c52e59807c176219a53d446a6f8e4"
+  },
+  "slime/slime_plugins/rollout_buffer/generator/__init__.py": {
+    "kind": "file",
+    "sha256": "0b4bed1673bc72da74df4164e91e34c8eab1b0f194d91a1eaa037321568396ba"
+  },
+  "slime/slime_plugins/rollout_buffer/generator/base_generator.py": {
+    "kind": "file",
+    "sha256": "c8431ff5e6c584111d5735811038104438ca61b28231b1a221a447866904a2ba"
+  },
+  "slime/slime_plugins/rollout_buffer/rollout_buffer_example.py": {
+    "kind": "file",
+    "sha256": "129c3511e57f1372c72a2d5449b5a276e7097b613777ade6e6bb01f8add458c0"
+  },
+  "slime/slime_plugins/rollout_buffer/rollout_buffer_example.sh": {
+    "kind": "file",
+    "sha256": "5246c3901ae164fcc49b7c65b12e5656f9564d698c44e374b628657ab8327ff8"
+  },
+  "slime/tests/_cp_dist_helpers.py": {
+    "kind": "file",
+    "sha256": "c5fbf55745509b06a3ed81c1dcde61195752c410a9632425e49bd6b1310c4344"
+  },
+  "slime/tests/ci/README.md": {
+    "kind": "file",
+    "sha256": "f331106c64da2b37aecae115227f6242050d06ad01a3290ed249d96bec6f08a3"
+  },
+  "slime/tests/ci/github_runner/.env.example": {
+    "kind": "file",
+    "sha256": "984037cca4914cf6c743e5bd69433618c1c0e530df8810e3f8bda83b82d35831"
+  },
+  "slime/tests/ci/github_runner/.gitignore": {
+    "kind": "file",
+    "sha256": "e9cbb0224c4a3d23a6019ba557e0cd568c1ad5e1582ff1e335fb7d99b7a1055d"
+  },
+  "slime/tests/ci/github_runner/docker-compose.yml": {
+    "kind": "file",
+    "sha256": "49998f43a27803a7b01ba4c0efc39cb9354d7b0d80d387298b4267dc75e7461d"
+  },
+  "slime/tests/ci/gpu_lock_exec.py": {
+    "kind": "file",
+    "sha256": "3cdbab0cb542983dd86e0bb9bdf588d707f5d036cd70debc6453b48bf4c2d08e"
+  },
+  "slime/tests/glm52_layerwise_comparator.py": {
+    "kind": "file",
+    "sha256": "da3d46aa5a7f098c8b8766dc28d2d9279762c0c6585f22c5075c8db635b40ac7"
+  },
+  "slime/tests/observability/test_trace_utils.py": {
+    "kind": "file",
+    "sha256": "49d18119c5afbf337fe6b8675ed149f3078ebdd74938bff18990824f66e7d503"
+  },
+  "slime/tests/plugin_contracts/__init__.py": {
+    "kind": "file",
+    "sha256": "ba5c47bae3be244da380c7ea8843a3932efd88a72444472545fa0a83bcf5c5d6"
+  },
+  "slime/tests/plugin_contracts/_shared.py": {
+    "kind": "file",
+    "sha256": "be0b1a18f585104e5d985c8a6665dbb18441d8efb0493b274b4d368a2d2b8901"
+  },
+  "slime/tests/plugin_contracts/test_plugin_generate_contracts.py": {
+    "kind": "file",
+    "sha256": "dacb75815c8a2f48800a3766c44ef469e5fb81e1a205dc9a817d77acec71849a"
+  },
+  "slime/tests/plugin_contracts/test_plugin_path_loading_contracts.py": {
+    "kind": "file",
+    "sha256": "2064c6d5ed3f518466de4ccb42e2cf21cb1e0b5973aca3ab836a277cec9b8ee1"
+  },
+  "slime/tests/plugin_contracts/test_plugin_rollout_contracts.py": {
+    "kind": "file",
+    "sha256": "773a40dd7f73d7de706fb5f5815a2ca141348e7a065c0491d05c2740323ab935"
+  },
+  "slime/tests/plugin_contracts/test_plugin_runtime_hook_contracts.py": {
+    "kind": "file",
+    "sha256": "cf98f0b89fbb6e7c70f22c3d640a21807650f24dfdc2aea6a991f0de1ad95208"
+  },
+  "slime/tests/test_accelerator.py": {
+    "kind": "file",
+    "sha256": "23a518e44c30e1e8eb8895fe88c22af781388c025bb810e3a876a61455052d79"
+  },
+  "slime/tests/test_advantage_whiten_cp.py": {
+    "kind": "file",
+    "sha256": "9f2a2b12c53c27841ebe08ab7bf94108b9da50a1ece4a0d5726b0f51a25129ff"
+  },
+  "slime/tests/test_agent/__init__.py": {
+    "kind": "file",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "slime/tests/test_agent/_dump_helpers.py": {
+    "kind": "file",
+    "sha256": "c3ec0f306247c909f43e52a86b4fc6aa142c01c953f658a110e0c95dc9d3821b"
+  },
+  "slime/tests/test_agent/_fakes.py": {
+    "kind": "file",
+    "sha256": "a7b80ab78941def7e65de70e6a7ed7b8d3c62fbdcce8949c4a6f13f07be6e30d"
+  },
+  "slime/tests/test_agent/test_adapters.py": {
+    "kind": "file",
+    "sha256": "0c5e5d9493d11cfb2ec6bc537dcdef4ee96f6703fb49bf9938f549b0e400cb76"
+  },
+  "slime/tests/test_agent/test_agent_rollout_cpu.py": {
+    "kind": "file",
+    "sha256": "bc5c7fc5c04c1b85ec6cdfdbfac4ecd80c1aa986f6d7240ea2b7df0532fec1de"
+  },
+  "slime/tests/test_agent/test_harness.py": {
+    "kind": "file",
+    "sha256": "c0f08472bbff5b63b5cd991ce0da66f3c0709d847d459498ef1606da33bb0f95"
+  },
+  "slime/tests/test_agent/test_sandbox_exec_and_wait.py": {
+    "kind": "file",
+    "sha256": "c6d6b8fc0e17156b4d1cbefabb7c1d80ebfb625c4df40e8cea787301d355eca1"
+  },
+  "slime/tests/test_agent/test_trajectory_manager_branching.py": {
+    "kind": "file",
+    "sha256": "7258a3f94a3ac2465d8662043a15cd3508ad27a16adf3b5cd547e9e93d2a9238"
+  },
+  "slime/tests/test_block_fp8_zero_block.py": {
+    "kind": "file",
+    "sha256": "379492862f4b60bbd76f73efb4a597b31015d675b29fa68daef23ec45b3037ae"
+  },
+  "slime/tests/test_chunked_gae.py": {
+    "kind": "file",
+    "sha256": "91dc2c0377c86a152013641bc226de5944071ab3f3cbebdfc488a5df89515c6a"
+  },
+  "slime/tests/test_cispo_loss.py": {
+    "kind": "file",
+    "sha256": "1f94e00c2b096a9a1f3860a02dbef8a4e1453889e6f228ef94cce28f9c01c4df"
+  },
+  "slime/tests/test_cp_utils.py": {
+    "kind": "file",
+    "sha256": "78cea121b64d1c5b92cb0b3675ce467f30967ef8f0802b98114643fb0029d0ad"
+  },
+  "slime/tests/test_deep_ep_tms_patch.py": {
+    "kind": "file",
+    "sha256": "f4c4b4586746c145ad9c3538de155f53a1fe2452a44fe1b69500a6c90008e63d"
+  },
+  "slime/tests/test_deepgemm_forward.py": {
+    "kind": "file",
+    "sha256": "d1f5a59bcb199e5ce9f6353f760e20c3286982abc112057417d004e36e4d4b1c"
+  },
+  "slime/tests/test_deepgemm_moe_forward.py": {
+    "kind": "file",
+    "sha256": "d38e2b1c17316115bbf856f2b4120b7f7d8b69dd12ce27b074e802f981fca993"
+  },
+  "slime/tests/test_discounted_returns.py": {
+    "kind": "file",
+    "sha256": "a67b70951a77a474f9125be80c17a84bbc7ecc32ad2de47d4c3d75211589e239"
+  },
+  "slime/tests/test_dp_schedule.py": {
+    "kind": "file",
+    "sha256": "334316d08b2210c01ec377dde5167e234dd491208e04823d5d20d867704c6678"
+  },
+  "slime/tests/test_empty_colocated_weight_bucket.py": {
+    "kind": "file",
+    "sha256": "b3c760428d57ed78fe9ed72b3ac9aea7b5000585c630b68a68b0a78da83547ab"
+  },
+  "slime/tests/test_eval_config.py": {
+    "kind": "file",
+    "sha256": "87c6303c8abc203e2174f559dfd3c7823157ed782df23b7be45df1f5c4430fe9"
+  },
+  "slime/tests/test_expert_routing.py": {
+    "kind": "file",
+    "sha256": "7d2ab50c85582013fef91cbcbcabd7655edc746a4d9ce3925ca9ab77cc494537"
+  },
+  "slime/tests/test_external_sglang_engines.py": {
+    "kind": "file",
+    "sha256": "545b510c0735f7292b789fb21df0e09575065ff351287f69896d750540099cb1"
+  },
+  "slime/tests/test_filter_long_prompt.py": {
+    "kind": "file",
+    "sha256": "7b907968ebf7ac877e2646b6c12e7c3eac24b24808a6e9036df6367a37bdf38b"
+  },
+  "slime/tests/test_full_disk_weight_update.py": {
+    "kind": "file",
+    "sha256": "473023cbad89a34befec71448c37b30776553898b208cc9978841b92953a0bcb"
+  },
+  "slime/tests/test_fully_async_rollout.py": {
+    "kind": "file",
+    "sha256": "8ab19427be798fe45956dd917345662dbee3a235428aba8fda15fcbe5b5a4736"
+  },
+  "slime/tests/test_glm4.7_30B_A3B_pd_mooncake.py": {
+    "kind": "file",
+    "sha256": "51eebfcb6356d046f2c9fa3badd34f11085241a77fb0db1b555e1cb9733a666e"
+  },
+  "slime/tests/test_glm52_6layer_deterministic_e2e.py": {
+    "kind": "file",
+    "sha256": "ddbc09f595de36d60c21078e5858a1197d73adf087f7648e8bbcd2dea2e50d53"
+  },
+  "slime/tests/test_glm52_layerwise_comparison.py": {
+    "kind": "file",
+    "sha256": "c2134d543bb0402dbdb1190136d2fdf13e02ee5398f22e08bd29e1628b79c3ed"
+  },
+  "slime/tests/test_glm52_layerwise_zero_e2e.py": {
+    "kind": "file",
+    "sha256": "125c2739bf484c3d201c3ed6d909ca3623335935361336b146ac95887390dab8"
+  },
+  "slime/tests/test_glm5_indexer_q_norm.py": {
+    "kind": "file",
+    "sha256": "bb7b79c928f51049676b27bfa99629ce0ab9ee39284e822f57bad1d1113bf772"
+  },
+  "slime/tests/test_glm5_indexer_short_context.py": {
+    "kind": "file",
+    "sha256": "47c40ea7364d55477457d144fe865a0bad0bc9950d075a17ddaeccbcefd77570"
+  },
+  "slime/tests/test_gspo.sh": {
+    "kind": "file",
+    "sha256": "57f51207a20be6712e827c0b9928d59f4383b6000abb839a1dfaa3bbae1caf48"
+  },
+  "slime/tests/test_hf_to_megatron.py": {
+    "kind": "file",
+    "sha256": "4e8594d3386eada3528dd0499261fc910f22bd7e160d1de999aebaaff6214118"
+  },
+  "slime/tests/test_layerwise_alignment.py": {
+    "kind": "file",
+    "sha256": "15f1b8d0f392ebd01b4759d2337a03a01c15b6321bf8e10e464328a4b656c99d"
+  },
+  "slime/tests/test_logprob_response_spans.py": {
+    "kind": "file",
+    "sha256": "2bd4cb8993894097a5dbc7f03ddcfeaba16680bd27649f6b55242923062eb107"
+  },
+  "slime/tests/test_loss_cp_invariance.py": {
+    "kind": "file",
+    "sha256": "dbc8bc788811c67eda065daa9022e893e8a097903b4c02d9eeb4cc0d163675c3"
+  },
+  "slime/tests/test_megatron_argument_validation.py": {
+    "kind": "file",
+    "sha256": "bde5080fecec7d8eeb50285b37ac605053d14288fc43a7926b1dea95e19a91cb"
+  },
+  "slime/tests/test_metric_report.py": {
+    "kind": "file",
+    "sha256": "9ec9f645f93b05095cc84baf441891b2d1e8079efa1db10b8238721879e1a14e"
+  },
+  "slime/tests/test_metric_report_dist.py": {
+    "kind": "file",
+    "sha256": "a2bf073faf8379494277d621ddb4ece91143c5af4c505eeb5b482ab027f02190"
+  },
+  "slime/tests/test_mimo_7B_mtp_only_grad.py": {
+    "kind": "file",
+    "sha256": "d41291ed5d26f3c002fe53ee5048ea796af61b73ea5456624c7aca3b3df245aa"
+  },
+  "slime/tests/test_model_provider_freeze.py": {
+    "kind": "file",
+    "sha256": "914d2f5298e4da109cef2ba0e0cc9e33d97723db50ddab5947f3baa2cf201070"
+  },
+  "slime/tests/test_moonlight_16B_A3B.py": {
+    "kind": "file",
+    "sha256": "8588ea49ee9901593edad8661e772107f7c09523741442fb33a3e5e134c60050"
+  },
+  "slime/tests/test_moonlight_16B_A3B_r3.py": {
+    "kind": "file",
+    "sha256": "e10b7dac708089866d5a9a082c0863aca8dff6c3fbb0e46ecf0a1c73fab06ead"
+  },
+  "slime/tests/test_placement_group.py": {
+    "kind": "file",
+    "sha256": "32c309254bfba24f037e9177ab07d8199f95bb7b9f14b2f16675676ae0d35a40"
+  },
+  "slime/tests/test_policy_loss.py": {
+    "kind": "file",
+    "sha256": "328ad469218438ebc83785eafc78708b958a7658d4fbaa2655f59934bade1481"
+  },
+  "slime/tests/test_ppo_kl_metric.py": {
+    "kind": "file",
+    "sha256": "6a30f4cda78aa4a8beef4b2393f6df201cb12904ed3fca40f0cdc7a706099030"
+  },
+  "slime/tests/test_ppo_logprob_entropy.py": {
+    "kind": "file",
+    "sha256": "000651256763efe48523d6be2d9692c186d5e710b886aa9ddecca43b68657187"
+  },
+  "slime/tests/test_ppo_logprob_entropy_gpu.py": {
+    "kind": "file",
+    "sha256": "eea71e18c853736e2efbf910f7b4eb5435065379b7d2fad7cb074c4f2b585006"
+  },
+  "slime/tests/test_process_rollout_data.py": {
+    "kind": "file",
+    "sha256": "41346b9944703d931d4ddc942af5ccc510fcacf974a1fa691cbb492c86350df1"
+  },
+  "slime/tests/test_quick_start_glm4_9B.py": {
+    "kind": "file",
+    "sha256": "8338e38c226894feb2d5ad1c53689894152b03b411fb7e258b866a342373f18a"
+  },
+  "slime/tests/test_qwen2.5_0.5B_async_short.py": {
+    "kind": "file",
+    "sha256": "aedf97c5f5e46c83368079464e2d148d413178c87d7954e1d726e52d825a8f4c"
+  },
+  "slime/tests/test_qwen2.5_0.5B_debug_rollout_then_train.py": {
+    "kind": "file",
+    "sha256": "2fbcfd9777a58e7d6049371652dea6174fdca9ff98142b82b94294fd52fd310a"
+  },
+  "slime/tests/test_qwen2.5_0.5B_debug_train_dump_e2e.py": {
+    "kind": "file",
+    "sha256": "807b183f2d6499da9b4ffd48935f9ba5ff1355e39f4d9c6af3e81df47c993509"
+  },
+  "slime/tests/test_qwen2.5_0.5B_fanout_short.py": {
+    "kind": "file",
+    "sha256": "7294667aa8823d634dd5aba42efd82525296382bca0a62831ac5933b03ce2b12"
+  },
+  "slime/tests/test_qwen2.5_0.5B_fully_async_short.py": {
+    "kind": "file",
+    "sha256": "0712a64da153f663953a25f5eb6cc9cd2aca2bf16dc305302ac6278d5bf8bfe3"
+  },
+  "slime/tests/test_qwen2.5_0.5B_opd_sglang.py": {
+    "kind": "file",
+    "sha256": "fb7fa1749276eaa027a5f8bd98520534d394621bfe1a0113be051c5ca383daa8"
+  },
+  "slime/tests/test_qwen2.5_0.5B_sglang_config.py": {
+    "kind": "file",
+    "sha256": "55be3fe6bc7caf4835b1baae653c6f0440fc4701328641359f1725af576cceca"
+  },
+  "slime/tests/test_qwen2.5_0.5B_sglang_config_distributed.py": {
+    "kind": "file",
+    "sha256": "a146b2db2735e50607a13105c5adac50bbc177ea76039f3eb0642bea8fadb5dd"
+  },
+  "slime/tests/test_qwen2.5_0.5B_short.py": {
+    "kind": "file",
+    "sha256": "ba01776068705a97eacb08481ab518009cd669d1b747e4fd970b03db2757790c"
+  },
+  "slime/tests/test_qwen3.5_0.8B_gsm8k_async_short.py": {
+    "kind": "file",
+    "sha256": "360dc6219c9f9af31ffe8737de28f2d8e2aab5b9e94a8d54f28c39db56c15509"
+  },
+  "slime/tests/test_qwen3.5_0.8B_gsm8k_short.py": {
+    "kind": "file",
+    "sha256": "77527d49770611dee469bbbf39c7643b3348abbf6231328a5fa6eee3f89751e6"
+  },
+  "slime/tests/test_qwen3.6_35B_A3B_pd_mooncake.py": {
+    "kind": "file",
+    "sha256": "aecccc0692ca84eb95e65de4429ee3427aed4d38dc496b1c743c4067ab134b39"
+  },
+  "slime/tests/test_qwen3_0.6B_parallel_check.py": {
+    "kind": "file",
+    "sha256": "55d9bb99b72f74ff2b577dc441d42c3733f80259e807fba1a4dae3a0dd352dc1"
+  },
+  "slime/tests/test_qwen3_30B_A3B.py": {
+    "kind": "file",
+    "sha256": "111eec8d778032225cd833fdba7b6c442e2e871c7e22faf2eedc29462c053521"
+  },
+  "slime/tests/test_qwen3_30B_A3B_r3.py": {
+    "kind": "file",
+    "sha256": "48c10283b139a877db384e9a42063ee57977bd2c90c0396f30581ea04086150d"
+  },
+  "slime/tests/test_qwen3_4B_ckpt.py": {
+    "kind": "file",
+    "sha256": "7a91ca4eb370883f88fbabd1614bf266699f47fbc1e7e4c55631512f30052890"
+  },
+  "slime/tests/test_qwen3_4B_external_pd.py": {
+    "kind": "file",
+    "sha256": "cf89a4d0306fb4a343dbb852effa6d80436f2f847850f40a80422f07567da1fc"
+  },
+  "slime/tests/test_qwen3_4B_ppo.py": {
+    "kind": "file",
+    "sha256": "2fb37ad2a3cf80b1f5e16fa6d51ed4294d6a870572dc3532faff24b19ad8ef78"
+  },
+  "slime/tests/test_qwen3_4B_ppo_disaggregate.py": {
+    "kind": "file",
+    "sha256": "f7a65fc7a2e0abe249b5a3366a822e4da095e9f1fd135e36d331cd440566ee96"
+  },
+  "slime/tests/test_qwen3_4B_ppo_train_critic_only.py": {
+    "kind": "file",
+    "sha256": "ab1df522969311982b80199542a4923c75f1aa4c33e851932a1c1b0210578c66"
+  },
+  "slime/tests/test_qwen3_4B_streaming_partial_rollout.py": {
+    "kind": "file",
+    "sha256": "d49a448dfa3b847deb53f6e2816f4da12194a84b3e95627d4eb3c521367b3798"
+  },
+  "slime/tests/test_qwen3_5_vl_native.py": {
+    "kind": "file",
+    "sha256": "dc23ae9c05e42a2ad40752ea046c7b1d4c0db51db76467415e1e31fca68dd8c1"
+  },
+  "slime/tests/test_qwen3_linear_attention_cu_seqlens.py": {
+    "kind": "file",
+    "sha256": "2b4bcf15d0ad847c4884cc299e7fb61d26e90cc48229624203d6339dba56387c"
+  },
+  "slime/tests/test_read_file_slicing.py": {
+    "kind": "file",
+    "sha256": "4178b6ed4a2ebe3c3ef5d9a4b7b07415a9e1ab92d29fe797c87e732ffe7237fa"
+  },
+  "slime/tests/test_release_train.py": {
+    "kind": "file",
+    "sha256": "77cfa99b15adde6899039f9038751677b3132468b1692b6249b0e07ca702317d"
+  },
+  "slime/tests/test_reloadable_process_group_memory_check.py": {
+    "kind": "file",
+    "sha256": "3f529d50ab59d223cc58a854f99108bfd9d66f55cc8708df5a7e93e228f112dd"
+  },
+  "slime/tests/test_reloadable_process_group_world.py": {
+    "kind": "file",
+    "sha256": "081a8f7aba05fd8244ea736270e7bee394e820a71c089987b1521d3f0cee1b2b"
+  },
+  "slime/tests/test_rm_deepscaler.py": {
+    "kind": "file",
+    "sha256": "2738a93d267e739b3596487a3b71eba137292647fac996856b29f1ae0810a89d"
+  },
+  "slime/tests/test_rm_f1.py": {
+    "kind": "file",
+    "sha256": "e8cf34d23d15f1cc8376fea0c1005e093baac962200f96b52d52ae15aca9ac17"
+  },
+  "slime/tests/test_rm_gpqa.py": {
+    "kind": "file",
+    "sha256": "7a8d3f3c30cbd61c7baeeebb7399228e628ac14cbcf4f3414fd2386a41347d61"
+  },
+  "slime/tests/test_rm_math.py": {
+    "kind": "file",
+    "sha256": "75ec8c1a9779dcf636be40a65a5f3f2c984d642091c5c4ce4dd033f51ffe0adc"
+  },
+  "slime/tests/test_rm_math_dapo.py": {
+    "kind": "file",
+    "sha256": "cfad01c94f59b32da6780f2f412a192e72a454a7b1d19381f03558d1b3637964"
+  },
+  "slime/tests/test_rollout_data_utils.py": {
+    "kind": "file",
+    "sha256": "500f6cfb2b5be8561c6d13439985208256e0c3d5f913b8cbd2aff05f2bfec29f"
+  },
+  "slime/tests/test_rollout_metrics.py": {
+    "kind": "file",
+    "sha256": "078536606b3d53ef29170ab229a79b3a8ff711cb247170f4df07720f0e5e7603"
+  },
+  "slime/tests/test_rollout_sample_hooks.py": {
+    "kind": "file",
+    "sha256": "105e65e74a1cbd1f532bc8ea97aebd4d6ceca64fe2544595269d29f2b64f0435"
+  },
+  "slime/tests/test_rollout_validation.py": {
+    "kind": "file",
+    "sha256": "a90a73a705a0f207058b7b481259cd6594d705738c8a339e5996508a7685b484"
+  },
+  "slime/tests/test_sample.py": {
+    "kind": "file",
+    "sha256": "c6a0f4b22e2f58ff1ee5797b6a97a29aea4c62a6e18e00152b435350c3162ed0"
+  },
+  "slime/tests/test_sglang_config_mixed_offload.py": {
+    "kind": "file",
+    "sha256": "16776374d4feb10dbfd5d28cd1e77a9dfb4046b66bac6d11c737c50f32ba31a2"
+  },
+  "slime/tests/test_sglang_config_mixed_offload_ft.py": {
+    "kind": "file",
+    "sha256": "e61bc807cad9dcf93260a31172d5a5a1817cd691ce0e1f200abb86cab4ac54c5"
+  },
+  "slime/tests/test_stateless_adam.py": {
+    "kind": "file",
+    "sha256": "6011437fa4bcf65e45a1d38d2f0feb0211b953f5ad4b1ffbf70b1700b2f8ee19"
+  },
+  "slime/tests/test_tau_bench_token_delta.py": {
+    "kind": "file",
+    "sha256": "abe7f0d0c4c3cdafc7fd262ebe88d409a46e7f254f9ba849a22b89db130ebd08"
+  },
+  "slime/tests/test_train_data_utils.py": {
+    "kind": "file",
+    "sha256": "44e21a95523177b07517fcad3f2facd1407e3808e8dd28b9fc31c6548fa369db"
+  },
+  "slime/tests/test_value_temperature.py": {
+    "kind": "file",
+    "sha256": "649fb91787a70f282ee1f1ce1ffee6ebc848faaa01cc8dadfc1398cc5d84d2af"
+  },
+  "slime/tests/utils/test_hf_checkpoint_saver.py": {
+    "kind": "file",
+    "sha256": "0467fd40cfb6ae1e94de6c88e840c700f0de33e54eb0447375397d78ccbeb019"
+  },
+  "slime/tests/utils/test_loss_mask_type_qwen35.py": {
+    "kind": "file",
+    "sha256": "d1f351825f71ad434f2138c357593c098369b925713c88223709599f1bffca7b"
+  },
+  "slime/tests/utils/test_mask_utils.py": {
+    "kind": "file",
+    "sha256": "857569ad0b1fd519dd6b49f078c9c74e4bfd2bdbdc9a342f861c360e908fe11d"
+  },
+  "slime/tests/utils/test_megatron_role_config.py": {
+    "kind": "file",
+    "sha256": "99d614d3c6529379dc4da8e01a09a809402d841c375bbbd8d1eb8f7300bb5c4a"
+  },
+  "slime/tests/utils/test_megatron_server_arguments.py": {
+    "kind": "file",
+    "sha256": "02c6866b649065e8a07cd474a9f9e7498ee46262fe0f7c2185f06253582eb187"
+  },
+  "slime/tests/utils/test_sglang_arguments.py": {
+    "kind": "file",
+    "sha256": "615d2fe7ba5cad8906baed5b9e7181921784e944d4f7eb294cd42ce822cd4e24"
+  },
+  "slime/tests/utils/test_sglang_config.py": {
+    "kind": "file",
+    "sha256": "3a8bdf6923fc5d399a660f75829e64e300d83d05300c3f34d3e6d2b91ba5ced3"
+  },
+  "slime/tools/analyze_profile.py": {
+    "kind": "file",
+    "sha256": "b96d4059542f17717a443de071433943f5d4e0fef5485f09fcaaaf75fb3835e4"
+  },
+  "slime/tools/convert_hf_to_fp8.py": {
+    "kind": "file",
+    "sha256": "d13a283006c05dc882c69dd0d5e2552c24af99138b0dc6a59d01b72adcf9f939"
+  },
+  "slime/tools/convert_hf_to_int4.py": {
+    "kind": "file",
+    "sha256": "f4ce97b21305b88ca6a87bf04b5521a1add6e3540374e7c34ffae557ea2e5678"
+  },
+  "slime/tools/convert_hf_to_int4_direct.py": {
+    "kind": "file",
+    "sha256": "1380f1f71ed8147477ace7f7043f78cd1b5ef63786861f91189d7fa485dc499d"
+  },
+  "slime/tools/convert_hf_to_torch_dist.py": {
+    "kind": "file",
+    "sha256": "850492fbff4037cf4def36f9a32ad4dad88b32f076caa1663eb2de25130b1f54"
+  },
+  "slime/tools/convert_k2_thinking_int4_to_bf16.py": {
+    "kind": "file",
+    "sha256": "97125ca9629a4b6fccf076ad7cffb6cb59c3f1a2d0d841523d170ad6c50e5f8d"
+  },
+  "slime/tools/convert_to_hf.py": {
+    "kind": "file",
+    "sha256": "62c3b0295b0afcd05f42214206ff90c51fbafbe4fad795f0d0a8c59b7e8b2867"
+  },
+  "slime/tools/convert_torch_dist_to_hf.py": {
+    "kind": "file",
+    "sha256": "cb304a5e923c15dd935a17c6e02adea0ec701fb74e683b94cd8e74963f266382"
+  },
+  "slime/tools/convert_torch_dist_to_hf_parallel.py": {
+    "kind": "file",
+    "sha256": "3e77303edf537812ecba1896a57c5ed51d2b6b61e1423e497f3b146156412db5"
+  },
+  "slime/tools/fp8_cast_bf16.py": {
+    "kind": "file",
+    "sha256": "1a6c2c73701f344361656b49e07cb3f63084470f6b06c7ab8605227247e9a703"
+  },
+  "slime/tools/profile_rollout.py": {
+    "kind": "file",
+    "sha256": "a2973abde24ed450b1e578ef6c98016288e1a840851a96ec682de0a09456393c"
+  },
+  "slime/tools/trace_timeline_viewer.py": {
+    "kind": "file",
+    "sha256": "7feb508e653c9730f1ca9b94171c69201eb8fc44d12493c48d1276fcc22bc6bd"
+  },
+  "slime/train.py": {
+    "kind": "file",
+    "sha256": "1fcb0f4ad79177105d66f942ef31385f0c2a23810cc471d712e8f93c4eca8868"
+  },
+  "slime/train_async.py": {
+    "kind": "file",
+    "sha256": "f5cdac215d3c988ea55c1aaddad063ea1a69bc00f15f0593950fb39ae3816b8f"
+  },
+  "thinking-distill/analyze_pilot.py": {
+    "kind": "file",
+    "sha256": "e0f2d7fd0ea4e4f6b4c556c931cbf025daf63eec32985f64c2c36bbd847f012e"
+  },
+  "thinking-distill/analyze_pilot2.py": {
+    "kind": "file",
+    "sha256": "9d89516c936229c99d935f4a7f6ba6e98521f0173cd6064d888e043abf2cd59b"
+  },
+  "thinking-distill/analyze_pilot4.py": {
+    "kind": "file",
+    "sha256": "9ca0fb5dcca0e65403516a4bd8cfea3ab055bd1c454d2bab98228c69c08cf53c"
+  },
+  "thinking-distill/qc_prepared_thinking.py": {
+    "kind": "file",
+    "sha256": "7876712fb8c91d5e2b77b3a5d4c5a812c55bc2ddf47e65d5735aca849a6624a5"
+  },
+  "thinking-distill/rebuild_accepted_thinking.py": {
+    "kind": "file",
+    "sha256": "084682bcba069585be719fe48d96738ed68affac68ddbc5770ff5bc5b5bd772c"
+  },
+  "thinking-distill/t0_template_report.md": {
+    "kind": "file",
+    "sha256": "5b9bd9aa1c3f6d41a0b792801d34a94354a487484f45ad5ad55a1028defc9ff0"
+  },
+  "thinking-distill/t15_qc_samples.md": {
+    "kind": "file",
+    "sha256": "1165493f73bae19fc0ffd0a8cc1c2e5606465226e70424cb86a528cbb53a8e5e"
+  },
+  "thinking-distill/t15_report.md": {
+    "kind": "file",
+    "sha256": "1273c7e0f35e45abcb5565d8e1b5fdaa7ca0ee3b7501fda5b6296d105d05b642"
+  },
+  "thinking-distill/t1_pilot_report.md": {
+    "kind": "file",
+    "sha256": "b9e77f7c2edd3f579d59f767305144219c66496e82b597b1b5d36efc7b9f8c35"
+  },
+  "thinking-distill/t3_sft_report.md": {
+    "kind": "file",
+    "sha256": "85871837cbf88e3f94e481c1e47dc11486ce8579a8d1613041b22c53eae2e3da"
+  },
+  "thinking-distill/t4_rl_report.md": {
+    "kind": "file",
+    "sha256": "479518622788a2a9608502bcaa53a6651266708536e7255aae27e0915fda3e4a"
+  },
+  "thinking-distill/thinking_distill_plan.md": {
+    "kind": "file",
+    "sha256": "ee7c6dc57f93ad5b54b12b07779d8405e8986aca1f89dfb7c08745423dc8c5b6"
+  },
+  "项目RL训练流程详解.md": {
+    "kind": "file",
+    "sha256": "fec6952a9aa88b51f611b59d4a438528618a95cac75cf733991641aece855b30"
+  }
+}

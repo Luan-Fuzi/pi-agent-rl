@@ -1,0 +1,70 @@
+{
+  "axes": {
+    "done": {
+      "boot_ci95": [
+        0.001667,
+        0.083333
+      ],
+      "e3_mean": 0.805,
+      "mean_diff": 0.041667,
+      "t4_mean": 0.763333,
+      "tasks_loss": 26,
+      "tasks_tie": 126,
+      "tasks_win": 48
+    },
+    "r_hard": {
+      "boot_ci95": [
+        -0.03044,
+        0.054105
+      ],
+      "e3_mean": 0.403446,
+      "mean_diff": 0.011563,
+      "t4_mean": 0.391883,
+      "tasks_loss": 49,
+      "tasks_tie": 97,
+      "tasks_win": 54
+    },
+    "r_loose": {
+      "boot_ci95": [
+        -0.027918,
+        0.043504
+      ],
+      "e3_mean": 0.587026,
+      "mean_diff": 0.007967,
+      "t4_mean": 0.579059,
+      "tasks_loss": 66,
+      "tasks_tie": 51,
+      "tasks_win": 83
+    },
+    "r_success": {
+      "boot_ci95": [
+        -0.046667,
+        0.043333
+      ],
+      "e3_mean": 0.358333,
+      "mean_diff": -0.001667,
+      "t4_mean": 0.36,
+      "tasks_loss": 46,
+      "tasks_tie": 106,
+      "tasks_win": 48
+    },
+    "right_product": {
+      "boot_ci95": [
+        -0.065,
+        0.023333
+      ],
+      "e3_mean": 0.41,
+      "mean_diff": -0.02,
+      "t4_mean": 0.43,
+      "tasks_loss": 51,
+      "tasks_tie": 104,
+      "tasks_win": 45
+    }
+  },
+  "done_model_turns": {
+    "diff": -2.1345,
+    "e3": 15.2629,
+    "t4": 17.3974
+  },
+  "tasks": 200
+}

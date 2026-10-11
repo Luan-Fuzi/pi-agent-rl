@@ -35,3 +35,12 @@
 
 # Nested repository metadata
 **/.git/
+
+# Local analysis environment
+.venv/
+__pycache__/
+*.tar.gz
+*.zip
+**/models-store.json
+**/settings.json
+**/wire_probe/

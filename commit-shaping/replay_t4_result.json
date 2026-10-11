@@ -1,0 +1,41 @@
+{
+  "zero_variance": {
+    "E1": {
+      "groups": 500,
+      "zv": 215,
+      "allzero_env": 25,
+      "allzero_fixed": 20
+    },
+    "E2": {
+      "groups": 500,
+      "zv": 216,
+      "allzero_env": 25,
+      "allzero_fixed": 19
+    },
+    "E3": {
+      "groups": 500,
+      "zv": 87,
+      "allzero_env": 25,
+      "allzero_fixed": 19
+    }
+  },
+  "t4_train": {
+    "candidates": 2000,
+    "done": 1655,
+    "nondone_milestone_levels": {
+      "1": 56,
+      "3": 61,
+      "2": 226,
+      "0": 2
+    }
+  },
+  "t4_test_eval": {
+    "candidates": 200,
+    "done": 150,
+    "nondone_milestone_levels": {
+      "2": 31,
+      "1": 12,
+      "3": 7
+    }
+  }
+}
