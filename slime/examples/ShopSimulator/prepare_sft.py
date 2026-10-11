@@ -26,7 +26,43 @@ def text_content(content: Any) -> str:
     return "".join(str(part.get("text", "")) for part in content if isinstance(part, dict) and part.get("type") == "text")
 
 
-def to_qwen_message(message: dict, *, trainable: bool) -> dict:
+def events_messages_and_thinking(candidate: dict) -> tuple[list[dict], dict[int, str]]:
+    """Rebuild messages from message_end events, keeping thinking text aside.
+
+    Events omit the leading system message, so events message i corresponds to
+    candidate["messages"][i + 1]; the returned thinking map uses that
+    row["messages"] index. Returned messages have thinking parts stripped and
+    must equal candidate["messages"][1:] (checked by the caller).
+    """
+    stripped: list[dict] = []
+    thinking: dict[int, str] = {}
+    for event in candidate.get("events") or []:
+        if event.get("type") != "message_end":
+            continue
+        message = event.get("message")
+        if not isinstance(message, dict) or not message.get("role"):
+            continue
+        row_index = len(stripped) + 1
+        cleaned = json.loads(json.dumps(message, ensure_ascii=False))
+        parts = cleaned.get("content")
+        if cleaned.get("role") == "assistant" and isinstance(parts, list):
+            text = "\n".join(
+                str(part.get("thinking", ""))
+                for part in parts
+                if isinstance(part, dict) and part.get("type") == "thinking"
+            ).strip()
+            if text:
+                thinking[row_index] = text
+            cleaned["content"] = [
+                part
+                for part in parts
+                if not isinstance(part, dict) or part.get("type") != "thinking"
+            ]
+        stripped.append(cleaned)
+    return stripped, thinking
+
+
+def to_qwen_message(message: dict, *, trainable: bool, reasoning_content: str = "") -> dict:
     role = message["role"]
     if role in {"system", "user"}:
         return {"role": role, "content": text_content(message.get("content")), "step_loss_mask": 0}
@@ -38,6 +74,8 @@ def to_qwen_message(message: dict, *, trainable: bool) -> dict:
     if any(isinstance(part, dict) and part.get("type") == "thinking" for part in parts):
         raise ValueError("thinking block reached SFT conversion")
     result: dict[str, Any] = {"role": "assistant", "content": text_content(parts), "step_loss_mask": 1 if trainable else 0}
+    if reasoning_content:
+        result["reasoning_content"] = reasoning_content
     calls = []
     for part in parts if isinstance(parts, list) else []:
         if isinstance(part, dict) and part.get("type") == "toolCall":
@@ -61,7 +99,11 @@ def prepare(
     max_tokens: int,
 ) -> dict:
     """Expand every accepted trajectory into one example per decision turn."""
-    raw_files = sorted((input_dir / "raw").rglob("*.json"))
+    raw_files = sorted(
+        path
+        for path in (input_dir / "raw").rglob("*.json")
+        if not any(part.startswith(".") for part in path.parts)
+    )
     candidates = [json.loads(path.read_text(encoding="utf-8")) for path in raw_files]
     accepted = [row for row in candidates if row.get("accepted")]
     tokenizer = load_tokenizer(tokenizer_path, trust_remote_code=True)
@@ -74,12 +116,17 @@ def prepare(
         if not row.get("context_trace_valid") or len(traces) != len(row.get("context_snapshots") or []):
             rejected.append({"trajectory_id": row["trajectory_id"], "reason": "invalid_context_trace"})
             continue
+        stripped_events, thinking_map = events_messages_and_thinking(row)
+        if stripped_events != messages[1:]:
+            rejected.append({"trajectory_id": row["trajectory_id"], "reason": "events_alignment_mismatch"})
+            continue
         turn_count = len(traces)
         for turn_index, trace in enumerate(traces):
             target_index = int(row["context_snapshots"][turn_index]["assistant_message_index"])
             target = messages[target_index]
+            reasoning_content = thinking_map.get(target_index, "")
             qwen_messages = [to_qwen_message(message, trainable=False) for message in trace["messages"]]
-            qwen_messages.append(to_qwen_message(target, trainable=True))
+            qwen_messages.append(to_qwen_message(target, trainable=True, reasoning_content=reasoning_content))
             token_ids, loss_mask = masker.get_loss_mask(qwen_messages, tools=TOOLS)
             if len(token_ids) != len(loss_mask) or not any(loss_mask):
                 raise ValueError(f"invalid loss mask for {row['trajectory_id']} turn {turn_index}")
@@ -95,6 +142,7 @@ def prepare(
                     "compression_version": trace.get("compression_version"),
                     "trajectory_turn_count": turn_count,
                     "reward": row["reward"],
+                    "has_thinking": bool(reasoning_content),
                     "token_count": len(token_ids),
                     "target_token_count": sum(loss_mask),
                 },
@@ -125,7 +173,7 @@ def prepare(
         "rejected_examples": len(rejected),
         "rejection_reasons": {reason: sum(1 for row in rejected if row["reason"] == reason) for reason in sorted({row["reason"] for row in rejected})},
         "trace_mismatches": sum(1 for row in accepted if not row.get("context_trace_valid")),
-        "thinking_blocks": 0,
+        "thinking_blocks": sum(1 for row in examples if row["metadata"]["has_thinking"]),
         "token_count_mean": statistics.mean(token_counts) if token_counts else 0,
         "token_count_p95": percentile(token_counts, 0.95),
         "token_count_max": max(token_counts, default=0),

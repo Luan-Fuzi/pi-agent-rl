@@ -18,6 +18,11 @@ from .pi_harness import DEFAULT_SYSTEM_PROMPT, InfrastructureError, run_pi
 SCHEMA_VERSION = 1
 DEFAULT_PROMPT = "完成给定的购物任务。先调用 shop_reset，然后只使用 shop_act 与环境交互。"
 
+
+def thinking_enabled() -> bool:
+    """SHOP_PI_THINKING gates retention of teacher reasoning parts (off = legacy)."""
+    return os.environ.get("SHOP_PI_THINKING", "off").strip().lower() not in {"", "off"}
+
 AUTHORITATIVE_EVENT_TYPES = {
     "session", "agent_start", "agent_end", "turn_start", "turn_end",
     "message_end", "tool_execution_start", "tool_execution_end",
@@ -110,7 +115,7 @@ def authoritative_messages(events: list[dict]) -> list[dict]:
         if cleaned.get("role") == "assistant" and isinstance(cleaned.get("content"), list):
             cleaned["content"] = [
                 part for part in cleaned["content"]
-                if not isinstance(part, dict) or part.get("type") != "thinking"
+                if thinking_enabled() or not isinstance(part, dict) or part.get("type") != "thinking"
             ]
         messages.append(cleaned)
     return messages
@@ -122,6 +127,13 @@ def context_snapshots(messages: list[dict], keep_act_results: int) -> list[dict]
         if message.get("role") != "assistant":
             continue
         context = json.loads(json.dumps(messages[:message_index], ensure_ascii=False))
+        # pi strips thinking parts from history on the wire; snapshots must match.
+        for item in context:
+            if item.get("role") == "assistant" and isinstance(item.get("content"), list):
+                item["content"] = [
+                    part for part in item["content"]
+                    if not isinstance(part, dict) or part.get("type") != "thinking"
+                ]
         act_results = [
             index for index, item in enumerate(context)
             if item.get("role") == "toolResult" and item.get("toolName") == "shop_act"
@@ -320,7 +332,7 @@ async def collect_one(
             "provider": "deepseek",
             "model": args.model,
             "base_url": args.base_url,
-            "thinking": False,
+            "thinking": os.environ.get("SHOP_PI_THINKING", "off"),
             "context_window": args.context_window,
             "max_tokens": args.max_tokens,
         },

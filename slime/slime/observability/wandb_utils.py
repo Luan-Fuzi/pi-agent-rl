@@ -43,7 +43,11 @@ def init_wandb_primary(args):
     # Prepare wandb init parameters
     # add random 6 length string with characters
     if args.wandb_random_suffix:
-        group = args.wandb_group + "_" + wandb.util.generate_id()
+        try:
+            generate_id = wandb.util.generate_id
+        except AttributeError:  # wandb >= 0.29 moved generate_id out of wandb.util
+            from wandb.sdk.lib.runid import generate_id
+        group = args.wandb_group + "_" + generate_id()
         run_name = f"{group}-RANK_{args.rank}"
     else:
         group = args.wandb_group
@@ -77,6 +81,50 @@ def init_wandb_primary(args):
 
     # Set wandb_run_id in args for easy access throughout the training process
     args.wandb_run_id = wandb.run.id
+
+    # Direct SwanLab tracking, enabled with SLIME_SWANLAB_SYNC=1.
+    # swanlab.sync_wandb() does not capture metrics from offline wandb runs
+    # (verified on wandb 0.29 + swanlab 0.9.8), so logging_utils.log() mirrors
+    # metrics to SwanLab explicitly. All processes (driver, rollout manager,
+    # train actor) attach to one experiment via parallel="shared" + the wandb
+    # run id. Tracking failures must never break training.
+    if os.environ.get("SLIME_SWANLAB_SYNC") == "1":
+        _init_swanlab_shared(args, config=_compute_config_for_logging(args))
+
+
+def _init_swanlab_shared(args, config=None):
+    """Attach this process to the run's shared SwanLab experiment.
+
+    Uses parallel="shared" with the wandb run id as the common experiment id,
+    so the driver, rollout manager and train actor all log to one experiment.
+    """
+    import swanlab
+
+    if swanlab.has_run():
+        return
+
+    # Experiment names stay unique across launches even when WANDB_GROUP is reused.
+    experiment_name = args.wandb_group or None
+    if experiment_name and getattr(args, "wandb_run_id", None):
+        experiment_name = f"{experiment_name}-{args.wandb_run_id}"
+
+    def _do_init(with_config: bool):
+        swanlab.init(
+            project=args.wandb_project or "slime",
+            experiment_name=experiment_name,
+            config=config if with_config else None,
+            parallel="shared",
+            id=args.wandb_run_id,
+        )
+
+    try:
+        _do_init(with_config=True)
+    except Exception:
+        logger.exception("SwanLab init with config failed; retrying without config")
+        try:
+            _do_init(with_config=False)
+        except Exception:
+            logger.exception("SwanLab init failed; SwanLab tracking disabled")
 
 
 def _compute_config_for_logging(args):
@@ -162,6 +210,10 @@ def init_wandb_secondary(args, role=None):
     wandb.init(**init_kwargs)
 
     _init_wandb_common()
+
+    # SwanLab: join the shared experiment created by the primary process.
+    if os.environ.get("SLIME_SWANLAB_SYNC") == "1":
+        _init_swanlab_shared(args, config=_compute_secondary_config_for_logging(args, role=role))
 
 
 def _init_wandb_common():

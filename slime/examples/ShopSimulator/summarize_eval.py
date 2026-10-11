@@ -50,6 +50,8 @@ def summarize_dump(path: Path) -> dict[str, Any]:
             "fragments": len(fragments),
             "reward": next(iter(rewards)),
             "reward_detail": metadata.get("reward_detail") or {},
+            "env_reward_raw": metadata.get("env_reward_raw"),
+            "reward_shaping": metadata.get("reward_shaping"),
             "purchase_asin": metadata.get("purchase_asin"),
             "goal_asin": metadata.get("goal_asin"),
             "done": bool(metadata.get("env_done")),

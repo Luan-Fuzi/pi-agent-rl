@@ -36,6 +36,10 @@ class PiRunResult:
     error: str | None = None
     error_kind: str | None = None
     tool_errors: list[dict[str, str]] = field(default_factory=list)
+    # shop_act action strings the environment actually processed, in execution
+    # order (start args paired with a non-error, non-terminal-noop end event).
+    actions: list[str] = field(default_factory=list)
+    pending_tool_args: dict[str, str] = field(default_factory=dict, repr=False)
     events: list[dict] = field(default_factory=list, repr=False)
     context_traces: list[dict] = field(default_factory=list, repr=False)
 
@@ -47,6 +51,17 @@ DEFAULT_SYSTEM_PROMPT = (
     "你是购物 Agent。先调用一次 shop_reset 获取任务，然后只使用 shop_act，"
     "以 ShopSimulator 原生动作 DSL 与环境交互，直到任务结束。"
 )
+
+
+def _resolve_system_prompt(system_prompt: str | None) -> str:
+    # SHOP_SYSTEM_PROMPT_FILE overrides the built-in default (P0 prompt probe);
+    # unset = legacy behavior.
+    if system_prompt is not None:
+        return system_prompt
+    path = os.environ.get("SHOP_SYSTEM_PROMPT_FILE", "").strip()
+    if path:
+        return Path(path).read_text(encoding="utf-8").strip()
+    return DEFAULT_SYSTEM_PROMPT
 
 # Keep the rollout harness independent from pi's user/project defaults.  CLI
 # discovery switches below are the primary guard; these settings also pin
@@ -99,9 +114,25 @@ def _is_terminal(result: PiRunResult) -> bool:
 
 def parse_pi_event(result: PiRunResult, event: dict) -> None:
     event_type = event.get("type")
+    if event_type == "tool_execution_start":
+        # tool_execution_end carries no args, so pair the action string here.
+        if event.get("toolName") == "shop_act":
+            args = event.get("args")
+            call_id = event.get("toolCallId")
+            if isinstance(args, dict) and isinstance(args.get("action"), str) and call_id:
+                result.pending_tool_args[str(call_id)] = args["action"]
+        return
     if event_type == "tool_execution_end":
         result.tool_calls += 1
         tool_name, details = _event_details(event)
+        action = result.pending_tool_args.pop(str(event.get("toolCallId")), None)
+        if (
+            tool_name == "shop_act"
+            and action is not None
+            and not event.get("isError")
+            and not details.get("terminal_noop")
+        ):
+            result.actions.append(action)
         if isinstance(details.get("env_idx"), int):
             result.env_idx = details["env_idx"]
         if tool_name == "shop_act":
@@ -178,7 +209,7 @@ async def run_pi(
     timeout_sec: float,
     pi_bin: str = "pi",
     extension: str | Path = DEFAULT_EXTENSION,
-    system_prompt: str = DEFAULT_SYSTEM_PROMPT,
+    system_prompt: str | None = None,
     provider_id: str = "slime-adapter",
     model_id: str = "qwen3.5-2b",
     model_name: str = "Qwen3.5-2B (Slime/SGLang)",
@@ -190,6 +221,7 @@ async def run_pi(
     capture_event_types: set[str] | None = None,
     max_tool_calls: int | None = None,
 ) -> PiRunResult:
+    system_prompt = _resolve_system_prompt(system_prompt)
     env = os.environ.copy()
     env.update({
         "SHOP_ENV_URL": env_url,
@@ -197,6 +229,14 @@ async def run_pi(
         "SHOP_ROLLOUT_SESSION_ID": session_id,
         "SHOP_CONTEXT_KEEP_ACT_RESULTS": os.environ.get("SHOP_CONTEXT_KEEP_ACT_RESULTS", "3"),
     })
+    # SHOP_PI_THINKING gates reasoning (default off = legacy behavior). Levels follow
+    # pi CLI: off, minimal, low, medium, high, xhigh, max. Special value "disabled":
+    # register the model as reasoning-capable but pass --thinking off, which makes pi
+    # send thinking:{type:"disabled"} — the true server-side off, unlike legacy "off"
+    # which sends no thinking params at all and leaves the server default on.
+    thinking_level = os.environ.get("SHOP_PI_THINKING", "off").strip().lower() or "off"
+    thinking_on = thinking_level not in {"", "off"}
+    cli_thinking_level = "off" if thinking_level == "disabled" else thinking_level
     # Each worker may expose a different adapter host/port. Give pi an isolated
     # config so it cannot accidentally use the global ~/.pi baseUrl.
     agent_dir = tempfile.mkdtemp(prefix="shop-pi-agent-")
@@ -213,14 +253,17 @@ async def run_pi(
                 "api": "openai-completions",
                 "compat": {
                     "supportsDeveloperRole": False,
-                    "supportsReasoningEffort": False,
+                    "supportsReasoningEffort": thinking_on,
                     "supportsStore": False,
                     "maxTokensField": "max_tokens",
                 },
                 "models": [{
                     "id": model_id, "name": model_name,
-                    "reasoning": False, "input": ["text"], "contextWindow": context_window,
+                    "reasoning": thinking_on, "input": ["text"], "contextWindow": context_window,
                     "maxTokens": max_tokens,
+                    # Without an explicit map, pi clamps xhigh/max down to high
+                    # (getSupportedThinkingLevels requires a mapping for them).
+                    **({"thinkingLevelMap": {"max": "max"}} if thinking_on else {}),
                     "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
                 }],
             }
@@ -256,7 +299,7 @@ async def run_pi(
     ]
     if model_api_key is None:
         command.extend(["--api-key", session_id])
-    command.extend(["--thinking", "off"])
+    command.extend(["--thinking", cli_thinking_level])
     try:
         proc = await asyncio.create_subprocess_exec(
             *command,

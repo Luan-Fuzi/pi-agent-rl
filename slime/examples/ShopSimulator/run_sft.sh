@@ -115,6 +115,18 @@ TRAIN_ARGS=(
   --attention-backend flash
 )
 
+# SwanLab tracking: reuses slime's wandb integration; active only when
+# SLIME_SWANLAB_SYNC=1 is set (see slime/observability/wandb_utils.py).
+if [[ "${SLIME_SWANLAB_SYNC:-0}" == "1" ]]; then
+  TRAIN_ARGS+=(
+    --use-wandb
+    --wandb-mode offline
+    --wandb-project "${WANDB_PROJECT:-pi-slime-shopsimulator}"
+    --wandb-group "${WANDB_GROUP:-$(basename "${RUN_ROOT}")}"
+    --wandb-dir "${RUN_ROOT}/wandb"
+  )
+fi
+
 {
   printf '%q ' "${SLIME_PYTHON}" -u train.py "${TRAIN_ARGS[@]}"
   printf '\n'
@@ -160,7 +172,7 @@ trap cleanup EXIT INT TERM
   --temp-dir "${RAY_TEMP_DIR}"
 RAY_STARTED=1
 
-RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
+RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS","SLIME_SWANLAB_SYNC"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
 
 cd "${SLIME_DIR}"
 "${RAY_BIN}" job submit --address=http://127.0.0.1:8265 \

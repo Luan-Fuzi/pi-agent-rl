@@ -20,6 +20,7 @@ from slime.utils.types import Sample
 
 from .common import prompt_text
 from .pi_harness import InfrastructureError, PiRunResult, run_pi
+from .reward_shaping import compute_process_stats, shape_reward
 
 logger = logging.getLogger(__name__)
 
@@ -272,7 +273,19 @@ async def finish_candidate_session(
     else:
         termination_reason = termination_reason or "agent_stop"
         outcome_kind = "agent_stop"
-    reward = float(result.reward) if result.done else 0.0
+    env_reward_raw = float(result.reward) if result.done else 0.0
+    process_stats = compute_process_stats(result.actions)
+    # Training-side reward shaping (audit-driven). Default variant "off" is a
+    # bit-identical passthrough; see reward_shaping.py and reward_shaping_plan.md.
+    reward, shaping_meta = shape_reward(
+        task_id,
+        env_reward_raw,
+        result.reward_detail if result.done else None,
+        result.purchase_asin,
+        done=result.done,
+        process_stats=process_stats,
+        model_turns=model_turns,
+    )
     error_message = result.error
     if error_message is None and result.tool_errors:
         error_message = result.tool_errors[-1]["message"]
@@ -286,8 +299,12 @@ async def finish_candidate_session(
             "env_over": result.over,
             "env_idx": result.env_idx,
             "reward_detail": result.reward_detail,
+            "env_reward_raw": env_reward_raw,
+            "reward_shaping": shaping_meta,
             "purchase_asin": result.purchase_asin,
             "goal_asin": result.goal_asin,
+            "process_stats": process_stats,
+            "action_sequence": result.actions,
             "pi_exit_code": result.exit_code,
             "pi_error": result.error,
             "error_kind": outcome_kind,

@@ -15,6 +15,7 @@ from __future__ import annotations
 import asyncio
 import dataclasses
 import logging
+import os
 import time
 import uuid
 from collections.abc import Callable
@@ -55,6 +56,12 @@ class Reply:
     wire: Any
 
 
+def _rollout_thinking_enabled() -> bool:
+    """SLIME_ROLLOUT_THINKING=1 renders an open think shell instead of the
+    template's default closed empty one, letting the model write reasoning."""
+    return os.environ.get("SLIME_ROLLOUT_THINKING", "0").strip().lower() in {"1", "true", "yes", "on"}
+
+
 def _render_token_ids(
     messages: list[dict],
     tokenizer,
@@ -63,11 +70,15 @@ def _render_token_ids(
     add_generation_prompt: bool = True,
 ) -> list[int]:
     """Render a chat-message list to token ids with the served chat template."""
+    template_kwargs: dict[str, Any] = {}
+    if _rollout_thinking_enabled():
+        template_kwargs["enable_thinking"] = True
     enc = tokenizer.apply_chat_template(
         messages,
         tools=tools,
         tokenize=True,
         add_generation_prompt=add_generation_prompt,
+        **template_kwargs,
     )
     ids = enc["input_ids"] if hasattr(enc, "__getitem__") and "input_ids" in enc else enc
     return list(ids)

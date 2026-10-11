@@ -112,7 +112,7 @@ TRAIN_ARGS=(
   --ref-load "${REF_MODEL_PATH}"
   --load "${RUN_ROOT}/checkpoints"
   --save "${RUN_ROOT}/checkpoints"
-  --save-interval "${TOTAL_ROLLOUTS}"
+  --save-interval "${SAVE_INTERVAL:-${TOTAL_ROLLOUTS}}"
   --save-hf "${RUN_ROOT}/hf/rollout_{rollout_id}"
   --no-save-optim
   --no-save-rng
@@ -180,6 +180,18 @@ TRAIN_ARGS=(
   --colocate
 )
 
+# SwanLab tracking: reuses slime's wandb integration; active only when
+# SLIME_SWANLAB_SYNC=1 is set (see slime/observability/wandb_utils.py).
+if [[ "${SLIME_SWANLAB_SYNC:-0}" == "1" ]]; then
+  TRAIN_ARGS+=(
+    --use-wandb
+    --wandb-mode offline
+    --wandb-project "${WANDB_PROJECT:-pi-slime-shopsimulator}"
+    --wandb-group "${WANDB_GROUP:-$(basename "${RUN_ROOT}")}"
+    --wandb-dir "${RUN_ROOT}/wandb"
+  )
+fi
+
 {
   printf '%q ' "${SLIME_PYTHON}" -u train.py "${TRAIN_ARGS[@]}"
   printf '\n'
@@ -231,7 +243,7 @@ trap cleanup EXIT INT TERM
   --temp-dir "${RAY_TEMP_DIR}"
 RAY_STARTED=1
 
-RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS","SHOP_ENV_URL","SHOP_MAX_TURNS","SHOP_CONTEXT_KEEP_ACT_RESULTS","SHOP_ROLLOUT_TIMEOUT_SEC","SHOP_REQUIRE_NONZERO_VARIANCE_PER_ROLLOUT","ADAPTER_PUBLIC_HOST","ADAPTER_BIND_HOST","ADAPTER_PORT","PI_BIN"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
+RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS","SHOP_ENV_URL","SHOP_MAX_TURNS","SHOP_CONTEXT_KEEP_ACT_RESULTS","SHOP_ROLLOUT_TIMEOUT_SEC","SHOP_REQUIRE_NONZERO_VARIANCE_PER_ROLLOUT","ADAPTER_PUBLIC_HOST","ADAPTER_BIND_HOST","ADAPTER_PORT","PI_BIN","SLIME_SWANLAB_SYNC","SHOP_REWARD_SHAPING","SHOP_REWARD_OPTION_WEIGHT","SHOP_REWARD_BUDGET_TOL","SHOP_REWARD_TABLE_DIR","SHOP_REWARD_MILESTONES","SHOP_REWARD_REOPEN_PENALTY","SHOP_REWARD_REPEAT_SEARCH_PENALTY","SHOP_REWARD_LOOP_BACK_PENALTY","SHOP_REWARD_REOPEN_FREE","SHOP_REWARD_EFFICIENCY_EPS","SHOP_REWARD_EFFICIENCY_FREE_TURNS","SHOP_REWARD_EFFICIENCY_SPAN","SLIME_ROLLOUT_THINKING"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
 
 cd "${SLIME_DIR}"
 "${RAY_BIN}" job submit --address=http://127.0.0.1:8265 \

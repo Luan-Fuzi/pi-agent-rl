@@ -24,7 +24,7 @@ ROLLOUT_SEED="${ROLLOUT_SEED:-42}"
 SEED="${SEED:-1234}"
 : "${EVAL_CHECKPOINT:?set EVAL_CHECKPOINT to a Hugging Face or Megatron checkpoint directory}"
 HF_CHECKPOINT="${HF_CHECKPOINT:-${EVAL_CHECKPOINT}}"
-PROMPT_DATA="${SCRIPT_DIR}/data/tasks_v2/official_test_200.jsonl"
+PROMPT_DATA="${PROMPT_DATA:-${SCRIPT_DIR}/data/tasks_v2/official_test_200.jsonl}"
 
 [[ -n "${PI_BIN}" && -x "${PI_BIN}" ]] || { echo "pi is required; set PI_BIN to its executable" >&2; exit 2; }
 for required in "${SLIME_PYTHON}" "${MEGATRON_DIR}" "${EVAL_CHECKPOINT}" "${HF_CHECKPOINT}" "${EVAL_CONFIG}" "${PROMPT_DATA}"; do
@@ -139,7 +139,7 @@ trap cleanup EXIT INT TERM
   --temp-dir "${RAY_TEMP_DIR}"
 RAY_STARTED=1
 
-RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS","SHOP_ENV_URL","SHOP_MAX_TURNS","SHOP_CONTEXT_KEEP_ACT_RESULTS","SHOP_ROLLOUT_TIMEOUT_SEC","ADAPTER_PUBLIC_HOST","ADAPTER_BIND_HOST","ADAPTER_PORT","PI_BIN"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
+RUNTIME_ENV_JSON="$("${SLIME_PYTHON}" -c 'import json, os; keys=("PYTHONPATH","PATH","CUDA_HOME","LD_LIBRARY_PATH","MASTER_ADDR","NO_PROXY","no_proxy","CUDA_DEVICE_MAX_CONNECTIONS","PYTORCH_CUDA_ALLOC_CONF","OMP_NUM_THREADS","SHOP_ENV_URL","SHOP_MAX_TURNS","SHOP_CONTEXT_KEEP_ACT_RESULTS","SHOP_ROLLOUT_TIMEOUT_SEC","ADAPTER_PUBLIC_HOST","ADAPTER_BIND_HOST","ADAPTER_PORT","PI_BIN","SHOP_SYSTEM_PROMPT_FILE","SLIME_ROLLOUT_THINKING"); print(json.dumps({"env_vars": {key: os.environ[key] for key in keys if key in os.environ}}))')"
 
 cd "${SLIME_DIR}"
 "${RAY_BIN}" job submit --address=http://127.0.0.1:8265 \

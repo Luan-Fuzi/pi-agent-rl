@@ -77,13 +77,19 @@ if [ ! -d "$BASE_DIR/sglang" ]; then
 fi
 cd $BASE_DIR/sglang
 git checkout ${SGLANG_COMMIT}
-pip install -e "python[all]" --extra-index-url https://download.pytorch.org/whl/cu129
+# AutoDL: download.pytorch.org is ~20KB/s from this host; resolve everything
+# from the Tsinghua PyPI mirror (pip.conf) instead. torch cu129 wheels are
+# installed from a local wheelhouse below.
+pip install -e "python[all]"
+pip install --force-reinstall --no-deps --no-index \
+  --find-links "/root/autodl-tmp/pi-slime-work/wheels_cu129" \
+  torch==2.11.0+cu129 torchvision==0.26.0+cu129 torchaudio==2.11.0+cu129
+# AutoDL: docs.sglang.ai redirects to github.com releases, which is ~0.1MB/s
+# from this host; wheels pre-downloaded locally via gh-proxy (sha256 from the
+# upstream index: kernel 4ea2f717..., gemm 6209d558...).
 pip install --force-reinstall --no-deps \
-  torch==2.11.0+cu129 torchvision==0.26.0+cu129 torchaudio==2.11.0+cu129 \
-  --index-url https://download.pytorch.org/whl/cu129
-pip install --force-reinstall --no-deps \
-  sglang-kernel==0.4.4 sgl-deep-gemm==0.1.4 \
-  --index-url https://docs.sglang.ai/whl/cu129/
+  "/root/autodl-tmp/pi-slime-work/wheels/sglang_kernel-0.4.4+cu129-cp310-abi3-manylinux2014_x86_64.whl" \
+  "/root/autodl-tmp/pi-slime-work/wheels/sgl_deep_gemm-0.1.4+cu129-py3-none-manylinux2014_x86_64.whl"
 pip uninstall -y \
   nvidia-cublas \
   nvidia-cuda-cupti \
@@ -117,9 +123,9 @@ pip install --force-reinstall --no-deps \
   nvidia-nccl-cu12 \
   nvidia-nvjitlink-cu12 \
   nvidia-nvshmem-cu12 \
-  nvidia-nvtx-cu12 \
-  --index-url https://download.pytorch.org/whl/cu129 \
-  --extra-index-url https://pypi.org/simple
+  nvidia-nvtx-cu12
+# AutoDL: the cu12 repair set above now resolves from the Tsinghua PyPI mirror
+# (same published wheels as download.pytorch.org, which is unusably slow here).
 
 
 pip install cmake ninja
@@ -129,15 +135,17 @@ pip install cmake ninja
 # CUDA 12, and the CXX11 ABI used by the conda environment. Upstream does not
 # publish that combination, so pin the community build linked from upstream
 # issue #2425 by its SHA256 digest.
+# AutoDL: wheel pre-downloaded locally via accelerated proxy (sha256 verified
+# against the digest pinned above in git history) to avoid slow github releases.
 pip uninstall -y flash-attn-4 flash_attn_4 || true
 pip install --no-deps \
-  "https://github.com/lesj0610/flash-attention/releases/download/v2.8.3-cu12-torch2.11/flash_attn-2.8.3%2Bcu12torch2.11cxx11abiTRUE-cp312-cp312-linux_x86_64.whl#sha256=3d0c8e60f820321eedd7166e79c33cb816263d8be6e35c3f5ba8fe2df6fea697"
+  "/root/autodl-tmp/pi-slime-work/wheels/flash_attn-2.8.3+cu12torch2.11cxx11abiTRUE-cp312-cp312-linux_x86_64.whl"
 
 pip install flash-linear-attention==0.4.2
 # FlashQLA: optional GDN backend for Qwen3.5/Qwen3-Next (--qwen-gdn-backend flashqla; requires SM90+)
 pip install git+https://github.com/QwenLM/FlashQLA.git --no-build-isolation
-# tilelang (matches Dockerfile)
-pip install tilelang -f https://tile-ai.github.io/whl/nightly/cu128/
+# tilelang (matches Dockerfile). AutoDL: nightly wheel pre-downloaded locally.
+pip install "/root/autodl-tmp/pi-slime-work/wheels/tilelang-0.1.7.post3+cu128.gitf8b4d9e6-cp38-abi3-manylinux_2_28_x86_64.whl"
 
 pip install --no-build-isolation "transformer_engine[pytorch]==2.16.1"
 
@@ -156,7 +164,8 @@ export TMS_CUDA_MAJOR
 pip install -v git+https://github.com/zhuzilin/torch_memory_saver.git@${TMS_COMMIT} \
   --no-cache-dir --force-reinstall --no-build-isolation
 pip install "nvidia-modelopt[torch]>=0.37.0" --no-build-isolation
-pip install https://github.com/zhuzilin/sgl-router/releases/download/v0.3.2-9daabcd/sglang_router-0.3.2-cp38-abi3-manylinux_2_28_x86_64.whl --force-reinstall
+# AutoDL: wheel pre-downloaded locally to avoid slow github releases.
+pip install "/root/autodl-tmp/pi-slime-work/wheels/sglang_router-0.3.2-cp38-abi3-manylinux_2_28_x86_64.whl" --force-reinstall
 python -c "import sglang_router; assert 'slime' in sglang_router.__version__"
 
 # megatron
